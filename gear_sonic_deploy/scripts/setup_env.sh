@@ -123,37 +123,43 @@ export OPENSSL_ROOT_DIR="/usr"
 # ROS2 Environment Setup - dynamically find ROS2 installation
 ROS2_FOUND=false
 
-# Common ROS2 distributions in order of preference (newest first)
-ROS2_DISTROS=("jazzy" "iron" "humble" "galactic" "foxy" "eloquent" "dashing" "crystal")
-ROS2_INSTALL_PATHS=("/opt/ros" "/usr/local/ros" "$HOME/ros2_ws/install")
+# Honor explicit override when users want to skip ROS2 for clean builds/runs.
+if [ "${HAS_ROS2:-auto}" = "0" ]; then
+    echo "ℹ️  ROS2 disabled by HAS_ROS2=0"
+    export HAS_ROS2=0
+else
+    # Common ROS2 distributions in order of preference (newest first)
+    ROS2_DISTROS=("jazzy" "iron" "humble" "galactic" "foxy" "eloquent" "dashing" "crystal")
+    ROS2_INSTALL_PATHS=("/opt/ros" "/usr/local/ros" "$HOME/ros2_ws/install")
 
-for install_path in "${ROS2_INSTALL_PATHS[@]}"; do
-    if [ "$ROS2_FOUND" = true ]; then
-        break
-    fi
-    
-    for distro in "${ROS2_DISTROS[@]}"; do
-        ros2_setup_file="$install_path/$distro/setup.bash"
-        if [ -f "$ros2_setup_file" ]; then
-            source "$ros2_setup_file"
-            export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
-            # Remove problematic system library path that conflicts with system GLIBC
-            export LD_LIBRARY_PATH=$(echo $LD_LIBRARY_PATH | tr ':' '\n' | grep -v "$SYSTEM_LIB_DIR" | tr '\n' ':' | sed 's/:$//')
-            echo "✅ ROS2 $distro found at $install_path/$distro - system manages all ROS2 dependencies"
-            export HAS_ROS2=1
-            export ROS_LOCALHOST_ONLY=1
-            ROS2_FOUND=true
+    for install_path in "${ROS2_INSTALL_PATHS[@]}"; do
+        if [ "$ROS2_FOUND" = true ]; then
             break
         fi
+        
+        for distro in "${ROS2_DISTROS[@]}"; do
+            ros2_setup_file="$install_path/$distro/setup.bash"
+            if [ -f "$ros2_setup_file" ]; then
+                source "$ros2_setup_file"
+                export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+                # Remove problematic system library path that conflicts with system GLIBC
+                export LD_LIBRARY_PATH=$(echo $LD_LIBRARY_PATH | tr ':' '\n' | grep -v "$SYSTEM_LIB_DIR" | tr '\n' ':' | sed 's/:$//')
+                echo "✅ ROS2 $distro found at $install_path/$distro - system manages all ROS2 dependencies"
+                export HAS_ROS2=1
+                export ROS_LOCALHOST_ONLY=1
+                ROS2_FOUND=true
+                break
+            fi
+        done
     done
-done
 
-if [ "$ROS2_FOUND" = false ]; then
-    echo "⚠️  ROS2 not found in common locations:"
-    printf "   %s/<distro>\n" "${ROS2_INSTALL_PATHS[@]}"
-    echo "   Install ROS2 system-wide for ROS2InputHandler support"
-    echo "   Building will continue without ROS2InputHandler"
-    export HAS_ROS2=0
+    if [ "$ROS2_FOUND" = false ]; then
+        echo "⚠️  ROS2 not found in common locations:"
+        printf "   %s/<distro>\n" "${ROS2_INSTALL_PATHS[@]}"
+        echo "   Install ROS2 system-wide for ROS2InputHandler support"
+        echo "   Building will continue without ROS2InputHandler"
+        export HAS_ROS2=0
+    fi
 fi
 
 # Set up production FastRTPS profile
@@ -344,4 +350,3 @@ echo ""
 if [ -n "$BASH_VERSION" ]; then
     export PS1="(g1_deploy) $PS1"
 fi
-

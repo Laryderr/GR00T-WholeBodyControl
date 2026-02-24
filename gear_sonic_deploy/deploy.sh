@@ -27,6 +27,7 @@ NC='\033[0m' # No Color
 # Script directory (where this script is located)
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
+REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 
 # ============================================================================
 # Interface Resolution Functions
@@ -211,6 +212,23 @@ show_usage() {
     echo "  --input-type TYPE       Set the input type (default: zmq_manager)"
     echo "  --output-type TYPE      Set the output type (default: ros2)"
     echo "  --zmq-host HOST         Set the ZMQ host (default: localhost)"
+    echo "  --batch-autoplay        Run batch playback for all motions in --motion-data"
+    echo "  --batch-workspace PATH  Workspace for batch outputs/logs"
+    echo "  --batch-motion-list TXT Optional motion-name list (one per line) for batch playback"
+    echo "  --batch-duration-factor FLOAT  Per-motion run duration factor (default: 1.10)"
+    echo "  --batch-startup-sec SEC Extra startup wait per motion (default: 6.0)"
+    echo "  --batch-settle-sec SEC  Extra settle wait per motion (default: 1.0)"
+    echo "  --batch-warmup-frames N Warmup frames hint for later offline eval (default: 20)"
+    echo "  --batch-start-timeout-sec SEC  Max wait for CONTROL/log startup (default: 25)"
+    echo "  --batch-inject-interval-sec SEC  Interval for repeated ']' start-key injection (default: 1.0)"
+    echo "  --batch-min-log-rows N  Min data rows in q.csv or motion_playing.csv to mark start success (default: 2)"
+    echo "  --batch-fail-fast       Stop batch on first failed motion run"
+    echo "  --batch-no-fail-fast    Continue batch even if a motion fails (default)"
+    echo "  --batch-no-inject-start-key Disable automatic ']' key injection in batch mode"
+    echo "  --batch-single-session  Run one deploy process and auto-play motions via T/N keys"
+    echo "  --batch-single-session-max-motions N  Limit number of motions in single-session (0 = all)"
+    echo "  --batch-single-session-post-complete-sec SEC  Wait after each motion completion (default: 0.2)"
+    echo "  --batch-single-session-key-gap-sec SEC  Delay between injected keys (default: 0.15)"
     echo ""
     echo "Interface modes:"
     echo "  sim              Use loopback interface for simulation (MuJoCo)"
@@ -229,6 +247,20 @@ show_usage() {
     echo "  $0 --obs-config policy/configs/custom.yaml sim  # Use custom obs config"
     echo "  $0 --planner planner/custom.onnx --input-type keyboard real  # Use custom planner and input"
     echo "  $0 --motion-data reference/custom_motion/ sim  # Use custom motion data"
+}
+
+to_abs_path() {
+    python - "$1" "$SCRIPT_DIR" <<'PY'
+import os
+import sys
+
+path = sys.argv[1]
+base = sys.argv[2]
+if os.path.isabs(path):
+    print(os.path.abspath(path))
+else:
+    print(os.path.abspath(os.path.join(base, path)))
+PY
 }
 
 # Default interface mode
@@ -251,6 +283,24 @@ MOTION_DATA="$MOTION_DATA_DEFAULT"
 INPUT_TYPE="$INPUT_TYPE_DEFAULT"
 OUTPUT_TYPE="$OUTPUT_TYPE_DEFAULT"
 ZMQ_HOST="$ZMQ_HOST_DEFAULT"
+
+# Batch autoplay options (off by default)
+BATCH_AUTOPLAY=false
+BATCH_WORKSPACE=""
+BATCH_MOTION_LIST=""
+BATCH_DURATION_FACTOR="1.10"
+BATCH_STARTUP_SEC="6.0"
+BATCH_SETTLE_SEC="1.0"
+BATCH_WARMUP_FRAMES="20"
+BATCH_START_TIMEOUT_SEC="25"
+BATCH_INJECT_INTERVAL_SEC="1.0"
+BATCH_MIN_LOG_ROWS="2"
+BATCH_FAIL_FAST=false
+BATCH_INJECT_START_KEY=true
+BATCH_SINGLE_SESSION=false
+BATCH_SINGLE_SESSION_MAX_MOTIONS="0"
+BATCH_SINGLE_SESSION_POST_COMPLETE_SEC="0.2"
+BATCH_SINGLE_SESSION_KEY_GAP_SEC="0.15"
 
 # Parse arguments
 while [[ $# -gt 0 ]]; do
@@ -315,6 +365,122 @@ while [[ $# -gt 0 ]]; do
             ZMQ_HOST="$2"
             shift 2
             ;;
+        --batch-autoplay)
+            BATCH_AUTOPLAY=true
+            shift
+            ;;
+        --batch-workspace)
+            if [[ -z "$2" ]]; then
+                echo -e "${RED}Error: --batch-workspace requires a path argument${NC}" >&2
+                exit 1
+            fi
+            BATCH_WORKSPACE="$2"
+            shift 2
+            ;;
+        --batch-motion-list)
+            if [[ -z "$2" ]]; then
+                echo -e "${RED}Error: --batch-motion-list requires a txt path${NC}" >&2
+                exit 1
+            fi
+            BATCH_MOTION_LIST="$2"
+            shift 2
+            ;;
+        --batch-duration-factor)
+            if [[ -z "$2" ]]; then
+                echo -e "${RED}Error: --batch-duration-factor requires a float${NC}" >&2
+                exit 1
+            fi
+            BATCH_DURATION_FACTOR="$2"
+            shift 2
+            ;;
+        --batch-startup-sec)
+            if [[ -z "$2" ]]; then
+                echo -e "${RED}Error: --batch-startup-sec requires a number${NC}" >&2
+                exit 1
+            fi
+            BATCH_STARTUP_SEC="$2"
+            shift 2
+            ;;
+        --batch-settle-sec)
+            if [[ -z "$2" ]]; then
+                echo -e "${RED}Error: --batch-settle-sec requires a number${NC}" >&2
+                exit 1
+            fi
+            BATCH_SETTLE_SEC="$2"
+            shift 2
+            ;;
+        --batch-warmup-frames)
+            if [[ -z "$2" ]]; then
+                echo -e "${RED}Error: --batch-warmup-frames requires an integer${NC}" >&2
+                exit 1
+            fi
+            BATCH_WARMUP_FRAMES="$2"
+            shift 2
+            ;;
+        --batch-start-timeout-sec)
+            if [[ -z "$2" ]]; then
+                echo -e "${RED}Error: --batch-start-timeout-sec requires a number${NC}" >&2
+                exit 1
+            fi
+            BATCH_START_TIMEOUT_SEC="$2"
+            shift 2
+            ;;
+        --batch-inject-interval-sec)
+            if [[ -z "$2" ]]; then
+                echo -e "${RED}Error: --batch-inject-interval-sec requires a number${NC}" >&2
+                exit 1
+            fi
+            BATCH_INJECT_INTERVAL_SEC="$2"
+            shift 2
+            ;;
+        --batch-min-log-rows)
+            if [[ -z "$2" ]]; then
+                echo -e "${RED}Error: --batch-min-log-rows requires an integer${NC}" >&2
+                exit 1
+            fi
+            BATCH_MIN_LOG_ROWS="$2"
+            shift 2
+            ;;
+        --batch-fail-fast)
+            BATCH_FAIL_FAST=true
+            shift
+            ;;
+        --batch-no-fail-fast)
+            BATCH_FAIL_FAST=false
+            shift
+            ;;
+        --batch-no-inject-start-key)
+            BATCH_INJECT_START_KEY=false
+            shift
+            ;;
+        --batch-single-session)
+            BATCH_SINGLE_SESSION=true
+            shift
+            ;;
+        --batch-single-session-max-motions)
+            if [[ -z "$2" ]]; then
+                echo -e "${RED}Error: --batch-single-session-max-motions requires an integer${NC}" >&2
+                exit 1
+            fi
+            BATCH_SINGLE_SESSION_MAX_MOTIONS="$2"
+            shift 2
+            ;;
+        --batch-single-session-post-complete-sec)
+            if [[ -z "$2" ]]; then
+                echo -e "${RED}Error: --batch-single-session-post-complete-sec requires a number${NC}" >&2
+                exit 1
+            fi
+            BATCH_SINGLE_SESSION_POST_COMPLETE_SEC="$2"
+            shift 2
+            ;;
+        --batch-single-session-key-gap-sec)
+            if [[ -z "$2" ]]; then
+                echo -e "${RED}Error: --batch-single-session-key-gap-sec requires a number${NC}" >&2
+                exit 1
+            fi
+            BATCH_SINGLE_SESSION_KEY_GAP_SEC="$2"
+            shift 2
+            ;;
         sim|real)
             INTERFACE_MODE="$1"
             shift
@@ -358,6 +524,17 @@ echo ""
 # CHECKPOINT and OBS_CONFIG are already set from argument parsing above
 
 # Decoder and Encoder ONNX models
+CHECKPOINT="$(to_abs_path "$CHECKPOINT")"
+OBS_CONFIG="$(to_abs_path "$OBS_CONFIG")"
+PLANNER="$(to_abs_path "$PLANNER")"
+MOTION_DATA="$(to_abs_path "$MOTION_DATA")"
+if [[ -n "$BATCH_WORKSPACE" ]]; then
+    BATCH_WORKSPACE="$(to_abs_path "$BATCH_WORKSPACE")"
+fi
+if [[ -n "$BATCH_MOTION_LIST" ]]; then
+    BATCH_MOTION_LIST="$(to_abs_path "$BATCH_MOTION_LIST")"
+fi
+
 CHECKPOINT_DECODER="${CHECKPOINT}_decoder.onnx"
 CHECKPOINT_ENCODER="${CHECKPOINT}_encoder.onnx"
 
@@ -433,6 +610,15 @@ if [ -d "$MOTION_DATA" ]; then
 else
     echo -e "${RED}❌ Missing directory: $MOTION_DATA${NC}"
     MISSING_FILES=$((MISSING_FILES + 1))
+fi
+
+if [[ "$BATCH_AUTOPLAY" == true ]] && [[ -n "$BATCH_MOTION_LIST" ]]; then
+    if [ -f "$BATCH_MOTION_LIST" ]; then
+        echo -e "${GREEN}✅ Found: $BATCH_MOTION_LIST${NC}"
+    else
+        echo -e "${RED}❌ Missing file: $BATCH_MOTION_LIST${NC}"
+        MISSING_FILES=$((MISSING_FILES + 1))
+    fi
 fi
 
 if [ $MISSING_FILES -gt 0 ]; then
@@ -515,6 +701,24 @@ echo -e "  Planner:            ${GREEN}$PLANNER${NC}"
 echo -e "  Input Type:         ${GREEN}$INPUT_TYPE${NC}"
 echo -e "  Output Type:        ${GREEN}$OUTPUT_TYPE${NC}"
 echo -e "  ZMQ Host:           ${GREEN}$ZMQ_HOST${NC}"
+echo -e "  Batch Autoplay:     ${GREEN}$BATCH_AUTOPLAY${NC}"
+if [[ "$BATCH_AUTOPLAY" == true ]]; then
+echo -e "  Batch Workspace:    ${GREEN}${BATCH_WORKSPACE:-<auto>}${NC}"
+echo -e "  Batch Motion List:  ${GREEN}${BATCH_MOTION_LIST:-<all motions>}${NC}"
+echo -e "  Batch Duration:     ${GREEN}$BATCH_DURATION_FACTOR${NC}"
+echo -e "  Batch Startup Sec:  ${GREEN}$BATCH_STARTUP_SEC${NC}"
+echo -e "  Batch Settle Sec:   ${GREEN}$BATCH_SETTLE_SEC${NC}"
+echo -e "  Batch Warmup Hint:  ${GREEN}$BATCH_WARMUP_FRAMES${NC}"
+echo -e "  Batch Start Timeout:${GREEN}$BATCH_START_TIMEOUT_SEC${NC}"
+echo -e "  Batch Inject Intvl: ${GREEN}$BATCH_INJECT_INTERVAL_SEC${NC}"
+echo -e "  Batch Min Log Rows: ${GREEN}$BATCH_MIN_LOG_ROWS${NC}"
+echo -e "  Batch Fail Fast:    ${GREEN}$BATCH_FAIL_FAST${NC}"
+echo -e "  Batch Inject Start: ${GREEN}$BATCH_INJECT_START_KEY${NC}"
+echo -e "  Batch Single Sess.: ${GREEN}$BATCH_SINGLE_SESSION${NC}"
+echo -e "  Batch Single Max:   ${GREEN}$BATCH_SINGLE_SESSION_MAX_MOTIONS${NC}"
+echo -e "  Batch Single Wait:  ${GREEN}$BATCH_SINGLE_SESSION_POST_COMPLETE_SEC${NC}"
+echo -e "  Batch Single Gap:   ${GREEN}$BATCH_SINGLE_SESSION_KEY_GAP_SEC${NC}"
+fi
 if [[ -n "$EXTRA_ARGS" ]]; then
 echo -e "  Extra Args:         ${GREEN}$EXTRA_ARGS${NC}"
 fi
@@ -523,15 +727,55 @@ echo -e "${CYAN}═════════════════════�
 echo ""
 echo -e "${YELLOW}The following command will be executed:${NC}"
 echo ""
-echo -e "${BLUE}just run g1_deploy_onnx_ref $TARGET $CHECKPOINT_DECODER $MOTION_DATA \\${NC}"
-echo -e "${BLUE}    --obs-config $OBS_CONFIG \\${NC}"
-echo -e "${BLUE}    --encoder-file $CHECKPOINT_ENCODER \\${NC}"
-echo -e "${BLUE}    --planner-file $PLANNER \\${NC}"
-echo -e "${BLUE}    --input-type $INPUT_TYPE \\${NC}"
-echo -e "${BLUE}    --output-type $OUTPUT_TYPE \\${NC}"
+if [[ "$BATCH_AUTOPLAY" == true ]]; then
+echo -e "${BLUE}python ../tools/eval_tracking/auto_run_motion_eval.py${NC} \\"
+echo -e "${BLUE}    --repo-root $REPO_ROOT${NC} \\"
+echo -e "${BLUE}    --reference-root $MOTION_DATA${NC} \\"
+echo -e "${BLUE}    --network-interface $TARGET${NC} \\"
+echo -e "${BLUE}    --decoder-model $CHECKPOINT_DECODER${NC} \\"
+echo -e "${BLUE}    --encoder-model $CHECKPOINT_ENCODER${NC} \\"
+echo -e "${BLUE}    --planner-model $PLANNER${NC} \\"
+echo -e "${BLUE}    --obs-config $OBS_CONFIG${NC} \\"
+echo -e "${BLUE}    --input-type $INPUT_TYPE${NC} \\"
+echo -e "${BLUE}    --output-type $OUTPUT_TYPE${NC} \\"
+echo -e "${BLUE}    --duration-factor $BATCH_DURATION_FACTOR${NC} \\"
+echo -e "${BLUE}    --startup-sec $BATCH_STARTUP_SEC${NC} \\"
+echo -e "${BLUE}    --settle-sec $BATCH_SETTLE_SEC${NC} \\"
+echo -e "${BLUE}    --warmup-frames $BATCH_WARMUP_FRAMES${NC} \\"
+echo -e "${BLUE}    --start-timeout-sec $BATCH_START_TIMEOUT_SEC${NC} \\"
+echo -e "${BLUE}    --inject-interval-sec $BATCH_INJECT_INTERVAL_SEC${NC} \\"
+echo -e "${BLUE}    --min-log-rows $BATCH_MIN_LOG_ROWS${NC} \\"
+if [[ "$BATCH_SINGLE_SESSION" == true ]]; then
+echo -e "${BLUE}    --single-session${NC} \\"
+echo -e "${BLUE}    --single-session-max-motions $BATCH_SINGLE_SESSION_MAX_MOTIONS${NC} \\"
+echo -e "${BLUE}    --single-session-post-complete-sec $BATCH_SINGLE_SESSION_POST_COMPLETE_SEC${NC} \\"
+echo -e "${BLUE}    --single-session-key-gap-sec $BATCH_SINGLE_SESSION_KEY_GAP_SEC${NC} \\"
+fi
+echo -e "${BLUE}    --execute --no-eval${NC}"
+if [[ -n "$BATCH_WORKSPACE" ]]; then
+echo -e "${BLUE}    --workspace-root $BATCH_WORKSPACE${NC} \\"
+fi
+if [[ -n "$BATCH_MOTION_LIST" ]]; then
+echo -e "${BLUE}    --motion-list-txt $BATCH_MOTION_LIST${NC} \\"
+fi
+if [[ "$BATCH_FAIL_FAST" == true ]]; then
+echo -e "${BLUE}    --fail-fast${NC} \\"
+fi
+if [[ "$BATCH_INJECT_START_KEY" == false ]]; then
+echo -e "${BLUE}    --no-inject-start-key${NC} \\"
+fi
+echo -e "${BLUE}    # (end)${NC}"
+else
+echo -e "${BLUE}just run g1_deploy_onnx_ref $TARGET $CHECKPOINT_DECODER $MOTION_DATA${NC} \\"
+echo -e "${BLUE}    --obs-config $OBS_CONFIG${NC} \\"
+echo -e "${BLUE}    --encoder-file $CHECKPOINT_ENCODER${NC} \\"
+echo -e "${BLUE}    --planner-file $PLANNER${NC} \\"
+echo -e "${BLUE}    --input-type $INPUT_TYPE${NC} \\"
+echo -e "${BLUE}    --output-type $OUTPUT_TYPE${NC} \\"
 echo -e "${BLUE}    --zmq-host $ZMQ_HOST${NC}"
 if [[ -n "$EXTRA_ARGS" ]]; then
 echo -e "${BLUE}    $EXTRA_ARGS${NC}"
+fi
 fi
 echo ""
 echo -e "${CYAN}═══════════════════════════════════════════════════════════════════════${NC}"
@@ -550,25 +794,73 @@ if [[ "$confirm" =~ ^[Yy]$ ]] || [[ -z "$confirm" ]]; then
     echo ""
     echo -e "${GREEN}🚀 Starting deployment...${NC}"
     echo ""
-    
-    # Build the command with optional extra args
-    if [[ -n "$EXTRA_ARGS" ]]; then
-        just run g1_deploy_onnx_ref "$TARGET" "$CHECKPOINT_DECODER" "$MOTION_DATA" \
-            --obs-config "$OBS_CONFIG" \
-            --encoder-file "$CHECKPOINT_ENCODER" \
-            --planner-file "$PLANNER" \
-            --input-type "$INPUT_TYPE" \
-            --output-type "$OUTPUT_TYPE" \
-            --zmq-host "$ZMQ_HOST" \
-            $EXTRA_ARGS
+
+    if [[ "$BATCH_AUTOPLAY" == true ]]; then
+        echo -e "${YELLOW}Batch autoplay mode: start MuJoCo sim manually in the correct sim environment first.${NC}"
+        echo -e "${YELLOW}In MuJoCo window, press 9 once to disable elastic band before running batch.${NC}"
+
+        BATCH_CMD=(
+            python ../tools/eval_tracking/auto_run_motion_eval.py
+            --repo-root "$REPO_ROOT"
+            --reference-root "$MOTION_DATA"
+            --network-interface "$TARGET"
+            --decoder-model "$CHECKPOINT_DECODER"
+            --encoder-model "$CHECKPOINT_ENCODER"
+            --planner-model "$PLANNER"
+            --obs-config "$OBS_CONFIG"
+            --input-type "$INPUT_TYPE"
+            --output-type "$OUTPUT_TYPE"
+            --duration-factor "$BATCH_DURATION_FACTOR"
+            --startup-sec "$BATCH_STARTUP_SEC"
+            --settle-sec "$BATCH_SETTLE_SEC"
+            --warmup-frames "$BATCH_WARMUP_FRAMES"
+            --start-timeout-sec "$BATCH_START_TIMEOUT_SEC"
+            --inject-interval-sec "$BATCH_INJECT_INTERVAL_SEC"
+            --min-log-rows "$BATCH_MIN_LOG_ROWS"
+            --execute
+            --no-eval
+        )
+
+        if [[ -n "$BATCH_WORKSPACE" ]]; then
+            BATCH_CMD+=(--workspace-root "$BATCH_WORKSPACE")
+        fi
+        if [[ -n "$BATCH_MOTION_LIST" ]]; then
+            BATCH_CMD+=(--motion-list-txt "$BATCH_MOTION_LIST")
+        fi
+        if [[ "$BATCH_FAIL_FAST" == true ]]; then
+            BATCH_CMD+=(--fail-fast)
+        fi
+        if [[ "$BATCH_INJECT_START_KEY" == false ]]; then
+            BATCH_CMD+=(--no-inject-start-key)
+        fi
+        if [[ "$BATCH_SINGLE_SESSION" == true ]]; then
+            BATCH_CMD+=(--single-session)
+            BATCH_CMD+=(--single-session-max-motions "$BATCH_SINGLE_SESSION_MAX_MOTIONS")
+            BATCH_CMD+=(--single-session-post-complete-sec "$BATCH_SINGLE_SESSION_POST_COMPLETE_SEC")
+            BATCH_CMD+=(--single-session-key-gap-sec "$BATCH_SINGLE_SESSION_KEY_GAP_SEC")
+        fi
+
+        "${BATCH_CMD[@]}"
     else
-        just run g1_deploy_onnx_ref "$TARGET" "$CHECKPOINT_DECODER" "$MOTION_DATA" \
-            --obs-config "$OBS_CONFIG" \
-            --encoder-file "$CHECKPOINT_ENCODER" \
-            --planner-file "$PLANNER" \
-            --input-type "$INPUT_TYPE" \
-            --output-type "$OUTPUT_TYPE" \
-            --zmq-host "$ZMQ_HOST"
+        # Build the command with optional extra args
+        if [[ -n "$EXTRA_ARGS" ]]; then
+            just run g1_deploy_onnx_ref "$TARGET" "$CHECKPOINT_DECODER" "$MOTION_DATA" \
+                --obs-config "$OBS_CONFIG" \
+                --encoder-file "$CHECKPOINT_ENCODER" \
+                --planner-file "$PLANNER" \
+                --input-type "$INPUT_TYPE" \
+                --output-type "$OUTPUT_TYPE" \
+                --zmq-host "$ZMQ_HOST" \
+                $EXTRA_ARGS
+        else
+            just run g1_deploy_onnx_ref "$TARGET" "$CHECKPOINT_DECODER" "$MOTION_DATA" \
+                --obs-config "$OBS_CONFIG" \
+                --encoder-file "$CHECKPOINT_ENCODER" \
+                --planner-file "$PLANNER" \
+                --input-type "$INPUT_TYPE" \
+                --output-type "$OUTPUT_TYPE" \
+                --zmq-host "$ZMQ_HOST"
+        fi
     fi
 else
     echo ""
