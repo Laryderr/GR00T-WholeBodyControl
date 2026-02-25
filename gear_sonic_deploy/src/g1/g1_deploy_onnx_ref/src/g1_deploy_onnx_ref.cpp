@@ -3017,11 +3017,9 @@ class G1Deploy {
         if (current_motion_->name != "streamed") {
           if (current_frame_ >= current_motion_->timesteps) {
             operator_state.play = false;
-            std::cout << "Motion " << current_motion_->name << " completed." << std::endl;
-            current_frame_ = 0; // Reset to beginning
-            // Total reset: both base quaternion and delta heading
-            reinitialize_heading_ = true;
-            std::cout << "Reset to frame 0." << std::endl;
+            current_frame_ = std::max(0, static_cast<int>(current_motion_->timesteps) - 1);
+            std::cout << "Motion " << current_motion_->name << " completed. "
+                      << "Holding last frame: " << current_frame_ << std::endl;
           }
         } else {
           if (current_frame_ >= current_motion_->timesteps - saved_frame_for_observation_window_) {

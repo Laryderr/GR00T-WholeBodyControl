@@ -1,0 +1,7 @@
+Metadata for: color_20260224_180303
+==============================
+
+Body part indexes:
+[0]
+
+Total timesteps: 182

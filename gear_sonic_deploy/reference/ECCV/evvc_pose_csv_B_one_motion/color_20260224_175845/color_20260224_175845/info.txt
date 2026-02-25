@@ -1,0 +1,15 @@
+EVVC PKL -> SONIC reference conversion info
+========================================
+
+source_file: /home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/ECCV/evvc_pose_pkl/color_20260224_175845.pkl
+input_fps: 30.0
+target_fps: 50.0
+input_frames: 95
+output_frames: 157
+input_joint_order: mujoco
+output_joint_order: isaaclab
+quat_order_mode: xyzw
+quat_order_detected: xyzw
+quat_confidence: 1.0
+local_body_pos_shape: (95, 38, 3)
+link_body_list_len: 38
