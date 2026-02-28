@@ -4,7 +4,7 @@
   "glob": "test-kick-boll2.pkl",
   "target_fps": 50.0,
   "input_joint_order": "mujoco",
-  "quat_order": "wxyz",
+  "quat_order": "xyzw",
   "strict": true,
   "dry_run": false,
   "overwrite": true,
@@ -24,8 +24,8 @@
       "output_frames": 401,
       "input_joint_order": "mujoco",
       "output_joint_order": "isaaclab",
-      "quat_order_mode": "wxyz",
-      "quat_order_detected": "wxyz",
+      "quat_order_mode": "xyzw",
+      "quat_order_detected": "xyzw",
       "quat_confidence": 1.0
     }
   ]
