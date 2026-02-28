@@ -1,7 +1,7 @@
 EVVC PKL -> SONIC reference conversion info
 ========================================
 
-source_file: /home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/ECCV/Dream2Act_data_pkl/test-kick-boll.pkl
+source_file: /home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/ECCV/Dream2Act_data_pkl/test-kick-boll2.pkl
 input_fps: 30.0
 target_fps: 50.0
 input_frames: 241

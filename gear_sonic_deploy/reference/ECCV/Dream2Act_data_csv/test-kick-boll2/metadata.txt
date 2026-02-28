@@ -1,4 +1,4 @@
-Metadata for: test-kick-boll
+Metadata for: test-kick-boll2
 ==============================
 
 Body part indexes:
