@@ -6,5 +6,5 @@ target/
 logs/
 *.trt
 # *csv
-*/textop_converted
+*/OMOMO_selected
 # */ECCV

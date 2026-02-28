@@ -432,11 +432,13 @@ def convert_one_file(
                         "quat_confidence": confidence,
                         "local_body_pos_shape": (
                             tuple(np.asarray(data["local_body_pos"]).shape)
-                            if "local_body_pos" in data
+                            if ("local_body_pos" in data and data["local_body_pos"] is not None)
                             else None
                         ),
                         "link_body_list_len": (
-                            len(data["link_body_list"]) if "link_body_list" in data else None
+                            len(data["link_body_list"])
+                            if ("link_body_list" in data and data["link_body_list"] is not None)
+                            else None
                         ),
                     },
                 )

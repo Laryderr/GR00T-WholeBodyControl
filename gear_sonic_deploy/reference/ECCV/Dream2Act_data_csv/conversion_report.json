@@ -1,0 +1,32 @@
+{
+  "input_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/ECCV/Dream2Act_data_pkl",
+  "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/ECCV/Dream2Act_data_csv",
+  "glob": "test-kick-boll.pkl",
+  "target_fps": 50.0,
+  "input_joint_order": "mujoco",
+  "quat_order": "wxyz",
+  "strict": true,
+  "dry_run": false,
+  "overwrite": true,
+  "total": 1,
+  "success": 1,
+  "skipped": 0,
+  "error": 0,
+  "results": [
+    {
+      "source": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/ECCV/Dream2Act_data_pkl/test-kick-boll.pkl",
+      "motion_name": "test-kick-boll",
+      "status": "success",
+      "message": "converted",
+      "input_fps": 30.0,
+      "output_fps": 50.0,
+      "input_frames": 241,
+      "output_frames": 401,
+      "input_joint_order": "mujoco",
+      "output_joint_order": "isaaclab",
+      "quat_order_mode": "wxyz",
+      "quat_order_detected": "wxyz",
+      "quat_confidence": 1.0
+    }
+  ]
+}

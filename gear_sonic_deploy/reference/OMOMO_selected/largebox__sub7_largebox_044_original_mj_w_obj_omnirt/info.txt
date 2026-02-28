@@ -1,0 +1,10 @@
+TextOp -> GR00T conversion info
+================================
+source_file: /home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub7_largebox_044_original_mj_w_obj_omnirt/motion.npz
+object_name: largebox
+motion_name: sub7_largebox_044_original_mj_w_obj_omnirt
+
+fps: 50.0
+frames: 354
+num_bodies: 30
+export_object: True

@@ -1,0 +1,10 @@
+TextOp -> GR00T conversion info
+================================
+source_file: /home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub7_smallbox_026_original_mj_w_obj_omnirt/motion.npz
+object_name: smallbox
+motion_name: sub7_smallbox_026_original_mj_w_obj_omnirt
+
+fps: 50.0
+frames: 299
+num_bodies: 30
+export_object: True
