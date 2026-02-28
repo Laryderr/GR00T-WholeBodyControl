@@ -5,6 +5,6 @@ build/
 target/
 logs/
 *.trt
-*csv
-*/textop_converted
+# *csv
+*/OMOMO_selected
 # */ECCV

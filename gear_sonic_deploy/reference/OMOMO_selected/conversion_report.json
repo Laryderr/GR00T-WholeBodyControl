@@ -1,0 +1,2863 @@
+{
+  "input_root": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified",
+  "output_root": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted",
+  "dry_run": false,
+  "export_object": true,
+  "overwrite": false,
+  "total": 285,
+  "success": 285,
+  "skipped": 0,
+  "error": 0,
+  "results": [
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub10_largebox_014_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub10_largebox_014_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub10_largebox_014_original_mj_w_obj_omnirt",
+      "frames": 199,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub10_largebox_022_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub10_largebox_022_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub10_largebox_022_original_mj_w_obj_omnirt",
+      "frames": 187,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub10_largebox_024_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub10_largebox_024_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub10_largebox_024_original_mj_w_obj_omnirt",
+      "frames": 204,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub10_largebox_026_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub10_largebox_026_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub10_largebox_026_original_mj_w_obj_omnirt",
+      "frames": 229,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub10_largebox_036_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub10_largebox_036_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub10_largebox_036_original_mj_w_obj_omnirt",
+      "frames": 214,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub10_largebox_041_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub10_largebox_041_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub10_largebox_041_original_mj_w_obj_omnirt",
+      "frames": 194,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub10_largebox_042_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub10_largebox_042_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub10_largebox_042_original_mj_w_obj_omnirt",
+      "frames": 210,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub10_largebox_045_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub10_largebox_045_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub10_largebox_045_original_mj_w_obj_omnirt",
+      "frames": 232,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub10_largebox_052_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub10_largebox_052_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub10_largebox_052_original_mj_w_obj_omnirt",
+      "frames": 252,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub10_largebox_053_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub10_largebox_053_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub10_largebox_053_original_mj_w_obj_omnirt",
+      "frames": 252,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub10_largebox_056_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub10_largebox_056_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub10_largebox_056_original_mj_w_obj_omnirt",
+      "frames": 239,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub10_largebox_057_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub10_largebox_057_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub10_largebox_057_original_mj_w_obj_omnirt",
+      "frames": 245,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub10_largebox_081_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub10_largebox_081_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub10_largebox_081_original_mj_w_obj_omnirt",
+      "frames": 207,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub10_largebox_082_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub10_largebox_082_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub10_largebox_082_original_mj_w_obj_omnirt",
+      "frames": 229,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub10_largebox_083_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub10_largebox_083_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub10_largebox_083_original_mj_w_obj_omnirt",
+      "frames": 254,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub10_largebox_085_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub10_largebox_085_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub10_largebox_085_original_mj_w_obj_omnirt",
+      "frames": 245,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub10_largebox_086_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub10_largebox_086_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub10_largebox_086_original_mj_w_obj_omnirt",
+      "frames": 240,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub10_largebox_087_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub10_largebox_087_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub10_largebox_087_original_mj_w_obj_omnirt",
+      "frames": 282,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub10_largebox_088_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub10_largebox_088_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub10_largebox_088_original_mj_w_obj_omnirt",
+      "frames": 315,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub10_largebox_089_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub10_largebox_089_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub10_largebox_089_original_mj_w_obj_omnirt",
+      "frames": 262,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub10_largebox_090_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub10_largebox_090_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub10_largebox_090_original_mj_w_obj_omnirt",
+      "frames": 215,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub12_largebox_012_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub12_largebox_012_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub12_largebox_012_original_mj_w_obj_omnirt",
+      "frames": 382,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub12_largebox_041_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub12_largebox_041_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub12_largebox_041_original_mj_w_obj_omnirt",
+      "frames": 389,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub12_largebox_046_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub12_largebox_046_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub12_largebox_046_original_mj_w_obj_omnirt",
+      "frames": 485,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub12_largebox_073_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub12_largebox_073_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub12_largebox_073_original_mj_w_obj_omnirt",
+      "frames": 410,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub12_largebox_074_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub12_largebox_074_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub12_largebox_074_original_mj_w_obj_omnirt",
+      "frames": 505,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub12_largebox_076_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub12_largebox_076_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub12_largebox_076_original_mj_w_obj_omnirt",
+      "frames": 367,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub12_largebox_077_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub12_largebox_077_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub12_largebox_077_original_mj_w_obj_omnirt",
+      "frames": 397,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub12_largebox_079_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub12_largebox_079_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub12_largebox_079_original_mj_w_obj_omnirt",
+      "frames": 585,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub12_largebox_080_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub12_largebox_080_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub12_largebox_080_original_mj_w_obj_omnirt",
+      "frames": 529,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub16_largebox_007_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub16_largebox_007_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub16_largebox_007_original_mj_w_obj_omnirt",
+      "frames": 300,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub16_largebox_008_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub16_largebox_008_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub16_largebox_008_original_mj_w_obj_omnirt",
+      "frames": 272,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub16_largebox_011_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub16_largebox_011_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub16_largebox_011_original_mj_w_obj_omnirt",
+      "frames": 355,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub16_largebox_012_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub16_largebox_012_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub16_largebox_012_original_mj_w_obj_omnirt",
+      "frames": 335,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub16_largebox_015_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub16_largebox_015_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub16_largebox_015_original_mj_w_obj_omnirt",
+      "frames": 322,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub16_largebox_017_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub16_largebox_017_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub16_largebox_017_original_mj_w_obj_omnirt",
+      "frames": 385,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub16_largebox_018_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub16_largebox_018_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub16_largebox_018_original_mj_w_obj_omnirt",
+      "frames": 399,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub16_largebox_020_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub16_largebox_020_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub16_largebox_020_original_mj_w_obj_omnirt",
+      "frames": 255,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub16_largebox_023_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub16_largebox_023_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub16_largebox_023_original_mj_w_obj_omnirt",
+      "frames": 305,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub16_largebox_024_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub16_largebox_024_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub16_largebox_024_original_mj_w_obj_omnirt",
+      "frames": 329,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub16_largebox_025_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub16_largebox_025_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub16_largebox_025_original_mj_w_obj_omnirt",
+      "frames": 279,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub16_largebox_027_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub16_largebox_027_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub16_largebox_027_original_mj_w_obj_omnirt",
+      "frames": 357,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub16_largebox_028_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub16_largebox_028_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub16_largebox_028_original_mj_w_obj_omnirt",
+      "frames": 399,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub16_largebox_043_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub16_largebox_043_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub16_largebox_043_original_mj_w_obj_omnirt",
+      "frames": 234,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub16_largebox_044_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub16_largebox_044_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub16_largebox_044_original_mj_w_obj_omnirt",
+      "frames": 227,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub16_largebox_046_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub16_largebox_046_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub16_largebox_046_original_mj_w_obj_omnirt",
+      "frames": 229,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub16_largebox_048_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub16_largebox_048_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub16_largebox_048_original_mj_w_obj_omnirt",
+      "frames": 279,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub3_largebox_003_rot_0_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub3_largebox_003_rot_0_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub3_largebox_003_rot_0_mj_w_obj_omnirt",
+      "frames": 325,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub3_largebox_004_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub3_largebox_004_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub3_largebox_004_original_mj_w_obj_omnirt",
+      "frames": 355,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub3_largebox_010_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub3_largebox_010_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub3_largebox_010_original_mj_w_obj_omnirt",
+      "frames": 329,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub3_largebox_015_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub3_largebox_015_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub3_largebox_015_original_mj_w_obj_omnirt",
+      "frames": 244,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub3_largebox_016_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub3_largebox_016_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub3_largebox_016_original_mj_w_obj_omnirt",
+      "frames": 274,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub3_largebox_017_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub3_largebox_017_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub3_largebox_017_original_mj_w_obj_omnirt",
+      "frames": 339,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub3_largebox_028_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub3_largebox_028_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub3_largebox_028_original_mj_w_obj_omnirt",
+      "frames": 320,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub3_largebox_029_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub3_largebox_029_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub3_largebox_029_original_mj_w_obj_omnirt",
+      "frames": 362,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub3_largebox_030_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub3_largebox_030_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub3_largebox_030_original_mj_w_obj_omnirt",
+      "frames": 339,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub7_largebox_012_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub7_largebox_012_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub7_largebox_012_original_mj_w_obj_omnirt",
+      "frames": 350,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub7_largebox_013_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub7_largebox_013_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub7_largebox_013_original_mj_w_obj_omnirt",
+      "frames": 307,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub7_largebox_014_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub7_largebox_014_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub7_largebox_014_original_mj_w_obj_omnirt",
+      "frames": 260,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub7_largebox_015_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub7_largebox_015_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub7_largebox_015_original_mj_w_obj_omnirt",
+      "frames": 359,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub7_largebox_019_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub7_largebox_019_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub7_largebox_019_original_mj_w_obj_omnirt",
+      "frames": 220,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub7_largebox_023_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub7_largebox_023_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub7_largebox_023_original_mj_w_obj_omnirt",
+      "frames": 250,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub7_largebox_024_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub7_largebox_024_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub7_largebox_024_original_mj_w_obj_omnirt",
+      "frames": 279,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub7_largebox_025_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub7_largebox_025_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub7_largebox_025_original_mj_w_obj_omnirt",
+      "frames": 357,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub7_largebox_028_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub7_largebox_028_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub7_largebox_028_original_mj_w_obj_omnirt",
+      "frames": 332,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub7_largebox_042_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub7_largebox_042_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub7_largebox_042_original_mj_w_obj_omnirt",
+      "frames": 354,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub7_largebox_043_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub7_largebox_043_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub7_largebox_043_original_mj_w_obj_omnirt",
+      "frames": 372,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub7_largebox_044_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub7_largebox_044_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub7_largebox_044_original_mj_w_obj_omnirt",
+      "frames": 354,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub7_largebox_045_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub7_largebox_045_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub7_largebox_045_original_mj_w_obj_omnirt",
+      "frames": 385,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub7_largebox_046_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub7_largebox_046_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub7_largebox_046_original_mj_w_obj_omnirt",
+      "frames": 314,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub8_largebox_006_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub8_largebox_006_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub8_largebox_006_original_mj_w_obj_omnirt",
+      "frames": 359,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub8_largebox_019_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub8_largebox_019_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub8_largebox_019_original_mj_w_obj_omnirt",
+      "frames": 364,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub8_largebox_020_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub8_largebox_020_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub8_largebox_020_original_mj_w_obj_omnirt",
+      "frames": 329,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub8_largebox_022_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub8_largebox_022_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub8_largebox_022_original_mj_w_obj_omnirt",
+      "frames": 349,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub8_largebox_026_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub8_largebox_026_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub8_largebox_026_original_mj_w_obj_omnirt",
+      "frames": 329,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub8_largebox_042_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub8_largebox_042_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub8_largebox_042_original_mj_w_obj_omnirt",
+      "frames": 280,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub8_largebox_043_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub8_largebox_043_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub8_largebox_043_original_mj_w_obj_omnirt",
+      "frames": 244,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub8_largebox_044_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub8_largebox_044_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub8_largebox_044_original_mj_w_obj_omnirt",
+      "frames": 279,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub8_largebox_045_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub8_largebox_045_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub8_largebox_045_original_mj_w_obj_omnirt",
+      "frames": 284,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub8_largebox_046_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub8_largebox_046_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub8_largebox_046_original_mj_w_obj_omnirt",
+      "frames": 259,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/largebox/sub8_largebox_047_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/largebox__sub8_largebox_047_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "largebox",
+      "motion_name": "sub8_largebox_047_original_mj_w_obj_omnirt",
+      "frames": 312,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub10_smallbox_023_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub10_smallbox_023_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub10_smallbox_023_original_mj_w_obj_omnirt",
+      "frames": 209,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub10_smallbox_041_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub10_smallbox_041_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub10_smallbox_041_original_mj_w_obj_omnirt",
+      "frames": 242,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub10_smallbox_048_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub10_smallbox_048_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub10_smallbox_048_original_mj_w_obj_omnirt",
+      "frames": 252,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub10_smallbox_082_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub10_smallbox_082_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub10_smallbox_082_original_mj_w_obj_omnirt",
+      "frames": 209,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub10_smallbox_085_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub10_smallbox_085_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub10_smallbox_085_original_mj_w_obj_omnirt",
+      "frames": 249,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub10_smallbox_086_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub10_smallbox_086_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub10_smallbox_086_original_mj_w_obj_omnirt",
+      "frames": 219,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub10_smallbox_087_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub10_smallbox_087_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub10_smallbox_087_original_mj_w_obj_omnirt",
+      "frames": 237,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub10_smallbox_089_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub10_smallbox_089_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub10_smallbox_089_original_mj_w_obj_omnirt",
+      "frames": 240,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub14_smallbox_021_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub14_smallbox_021_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub14_smallbox_021_original_mj_w_obj_omnirt",
+      "frames": 339,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub14_smallbox_023_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub14_smallbox_023_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub14_smallbox_023_original_mj_w_obj_omnirt",
+      "frames": 294,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub14_smallbox_042_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub14_smallbox_042_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub14_smallbox_042_original_mj_w_obj_omnirt",
+      "frames": 324,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub14_smallbox_045_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub14_smallbox_045_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub14_smallbox_045_original_mj_w_obj_omnirt",
+      "frames": 267,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub17_smallbox_018_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub17_smallbox_018_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub17_smallbox_018_original_mj_w_obj_omnirt",
+      "frames": 449,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub17_smallbox_020_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub17_smallbox_020_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub17_smallbox_020_original_mj_w_obj_omnirt",
+      "frames": 392,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub17_smallbox_021_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub17_smallbox_021_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub17_smallbox_021_original_mj_w_obj_omnirt",
+      "frames": 452,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub17_smallbox_039_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub17_smallbox_039_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub17_smallbox_039_original_mj_w_obj_omnirt",
+      "frames": 332,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub17_smallbox_040_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub17_smallbox_040_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub17_smallbox_040_original_mj_w_obj_omnirt",
+      "frames": 342,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub17_smallbox_042_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub17_smallbox_042_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub17_smallbox_042_original_mj_w_obj_omnirt",
+      "frames": 367,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub4_smallbox_018_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub4_smallbox_018_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub4_smallbox_018_original_mj_w_obj_omnirt",
+      "frames": 337,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub4_smallbox_019_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub4_smallbox_019_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub4_smallbox_019_original_mj_w_obj_omnirt",
+      "frames": 392,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub4_smallbox_020_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub4_smallbox_020_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub4_smallbox_020_original_mj_w_obj_omnirt",
+      "frames": 369,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub4_smallbox_042_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub4_smallbox_042_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub4_smallbox_042_original_mj_w_obj_omnirt",
+      "frames": 385,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub4_smallbox_044_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub4_smallbox_044_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub4_smallbox_044_original_mj_w_obj_omnirt",
+      "frames": 390,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub4_smallbox_046_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub4_smallbox_046_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub4_smallbox_046_original_mj_w_obj_omnirt",
+      "frames": 382,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub7_smallbox_026_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub7_smallbox_026_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub7_smallbox_026_original_mj_w_obj_omnirt",
+      "frames": 299,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub7_smallbox_046_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub7_smallbox_046_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub7_smallbox_046_original_mj_w_obj_omnirt",
+      "frames": 410,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub7_smallbox_047_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub7_smallbox_047_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub7_smallbox_047_original_mj_w_obj_omnirt",
+      "frames": 374,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub7_smallbox_048_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub7_smallbox_048_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub7_smallbox_048_original_mj_w_obj_omnirt",
+      "frames": 362,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub7_smallbox_049_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub7_smallbox_049_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub7_smallbox_049_original_mj_w_obj_omnirt",
+      "frames": 397,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub8_smallbox_043_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub8_smallbox_043_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub8_smallbox_043_original_mj_w_obj_omnirt",
+      "frames": 249,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/smallbox/sub8_smallbox_046_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/smallbox__sub8_smallbox_046_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "smallbox",
+      "motion_name": "sub8_smallbox_046_original_mj_w_obj_omnirt",
+      "frames": 217,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/plasticbox/sub12_plasticbox_013_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/plasticbox__sub12_plasticbox_013_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "plasticbox",
+      "motion_name": "sub12_plasticbox_013_original_mj_w_obj_omnirt",
+      "frames": 542,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/plasticbox/sub12_plasticbox_050_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/plasticbox__sub12_plasticbox_050_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "plasticbox",
+      "motion_name": "sub12_plasticbox_050_original_mj_w_obj_omnirt",
+      "frames": 309,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/plasticbox/sub16_plasticbox_010_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/plasticbox__sub16_plasticbox_010_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "plasticbox",
+      "motion_name": "sub16_plasticbox_010_original_mj_w_obj_omnirt",
+      "frames": 227,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/plasticbox/sub16_plasticbox_027_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/plasticbox__sub16_plasticbox_027_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "plasticbox",
+      "motion_name": "sub16_plasticbox_027_original_mj_w_obj_omnirt",
+      "frames": 252,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/plasticbox/sub16_plasticbox_043_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/plasticbox__sub16_plasticbox_043_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "plasticbox",
+      "motion_name": "sub16_plasticbox_043_original_mj_w_obj_omnirt",
+      "frames": 205,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/plasticbox/sub16_plasticbox_047_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/plasticbox__sub16_plasticbox_047_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "plasticbox",
+      "motion_name": "sub16_plasticbox_047_original_mj_w_obj_omnirt",
+      "frames": 282,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/plasticbox/sub1_plasticbox_015_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/plasticbox__sub1_plasticbox_015_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "plasticbox",
+      "motion_name": "sub1_plasticbox_015_original_mj_w_obj_omnirt",
+      "frames": 299,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/plasticbox/sub1_plasticbox_019_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/plasticbox__sub1_plasticbox_019_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "plasticbox",
+      "motion_name": "sub1_plasticbox_019_original_mj_w_obj_omnirt",
+      "frames": 349,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/plasticbox/sub1_plasticbox_026_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/plasticbox__sub1_plasticbox_026_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "plasticbox",
+      "motion_name": "sub1_plasticbox_026_original_mj_w_obj_omnirt",
+      "frames": 257,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/plasticbox/sub1_plasticbox_032_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/plasticbox__sub1_plasticbox_032_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "plasticbox",
+      "motion_name": "sub1_plasticbox_032_original_mj_w_obj_omnirt",
+      "frames": 374,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/plasticbox/sub1_plasticbox_033_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/plasticbox__sub1_plasticbox_033_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "plasticbox",
+      "motion_name": "sub1_plasticbox_033_original_mj_w_obj_omnirt",
+      "frames": 345,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/plasticbox/sub1_plasticbox_071_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/plasticbox__sub1_plasticbox_071_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "plasticbox",
+      "motion_name": "sub1_plasticbox_071_original_mj_w_obj_omnirt",
+      "frames": 314,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/plasticbox/sub1_plasticbox_072_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/plasticbox__sub1_plasticbox_072_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "plasticbox",
+      "motion_name": "sub1_plasticbox_072_original_mj_w_obj_omnirt",
+      "frames": 322,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/plasticbox/sub1_plasticbox_073_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/plasticbox__sub1_plasticbox_073_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "plasticbox",
+      "motion_name": "sub1_plasticbox_073_original_mj_w_obj_omnirt",
+      "frames": 290,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/plasticbox/sub1_plasticbox_074_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/plasticbox__sub1_plasticbox_074_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "plasticbox",
+      "motion_name": "sub1_plasticbox_074_original_mj_w_obj_omnirt",
+      "frames": 295,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/plasticbox/sub1_plasticbox_077_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/plasticbox__sub1_plasticbox_077_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "plasticbox",
+      "motion_name": "sub1_plasticbox_077_original_mj_w_obj_omnirt",
+      "frames": 270,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/plasticbox/sub1_plasticbox_080_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/plasticbox__sub1_plasticbox_080_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "plasticbox",
+      "motion_name": "sub1_plasticbox_080_original_mj_w_obj_omnirt",
+      "frames": 342,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/plasticbox/sub5_plasticbox_021_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/plasticbox__sub5_plasticbox_021_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "plasticbox",
+      "motion_name": "sub5_plasticbox_021_original_mj_w_obj_omnirt",
+      "frames": 349,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/plasticbox/sub5_plasticbox_023_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/plasticbox__sub5_plasticbox_023_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "plasticbox",
+      "motion_name": "sub5_plasticbox_023_original_mj_w_obj_omnirt",
+      "frames": 389,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/plasticbox/sub5_plasticbox_024_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/plasticbox__sub5_plasticbox_024_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "plasticbox",
+      "motion_name": "sub5_plasticbox_024_original_mj_w_obj_omnirt",
+      "frames": 432,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/plasticbox/sub5_plasticbox_026_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/plasticbox__sub5_plasticbox_026_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "plasticbox",
+      "motion_name": "sub5_plasticbox_026_original_mj_w_obj_omnirt",
+      "frames": 412,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/plasticbox/sub5_plasticbox_029_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/plasticbox__sub5_plasticbox_029_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "plasticbox",
+      "motion_name": "sub5_plasticbox_029_original_mj_w_obj_omnirt",
+      "frames": 422,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/plasticbox/sub5_plasticbox_043_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/plasticbox__sub5_plasticbox_043_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "plasticbox",
+      "motion_name": "sub5_plasticbox_043_original_mj_w_obj_omnirt",
+      "frames": 529,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub14_suitcase_004_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub14_suitcase_004_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub14_suitcase_004_original_mj_w_obj_omnirt",
+      "frames": 347,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub14_suitcase_005_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub14_suitcase_005_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub14_suitcase_005_original_mj_w_obj_omnirt",
+      "frames": 304,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub14_suitcase_006_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub14_suitcase_006_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub14_suitcase_006_original_mj_w_obj_omnirt",
+      "frames": 272,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub14_suitcase_007_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub14_suitcase_007_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub14_suitcase_007_original_mj_w_obj_omnirt",
+      "frames": 297,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub14_suitcase_008_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub14_suitcase_008_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub14_suitcase_008_original_mj_w_obj_omnirt",
+      "frames": 279,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub14_suitcase_009_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub14_suitcase_009_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub14_suitcase_009_original_mj_w_obj_omnirt",
+      "frames": 207,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub14_suitcase_011_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub14_suitcase_011_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub14_suitcase_011_original_mj_w_obj_omnirt",
+      "frames": 349,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub14_suitcase_012_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub14_suitcase_012_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub14_suitcase_012_original_mj_w_obj_omnirt",
+      "frames": 392,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub14_suitcase_013_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub14_suitcase_013_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub14_suitcase_013_original_mj_w_obj_omnirt",
+      "frames": 382,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub14_suitcase_015_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub14_suitcase_015_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub14_suitcase_015_original_mj_w_obj_omnirt",
+      "frames": 304,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub15_suitcase_007_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub15_suitcase_007_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub15_suitcase_007_original_mj_w_obj_omnirt",
+      "frames": 307,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub15_suitcase_008_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub15_suitcase_008_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub15_suitcase_008_original_mj_w_obj_omnirt",
+      "frames": 152,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub15_suitcase_010_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub15_suitcase_010_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub15_suitcase_010_original_mj_w_obj_omnirt",
+      "frames": 179,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub15_suitcase_011_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub15_suitcase_011_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub15_suitcase_011_original_mj_w_obj_omnirt",
+      "frames": 160,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub15_suitcase_012_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub15_suitcase_012_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub15_suitcase_012_original_mj_w_obj_omnirt",
+      "frames": 142,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub15_suitcase_013_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub15_suitcase_013_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub15_suitcase_013_original_mj_w_obj_omnirt",
+      "frames": 162,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub15_suitcase_014_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub15_suitcase_014_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub15_suitcase_014_original_mj_w_obj_omnirt",
+      "frames": 160,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub15_suitcase_026_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub15_suitcase_026_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub15_suitcase_026_original_mj_w_obj_omnirt",
+      "frames": 177,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub15_suitcase_051_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub15_suitcase_051_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub15_suitcase_051_original_mj_w_obj_omnirt",
+      "frames": 304,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub15_suitcase_053_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub15_suitcase_053_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub15_suitcase_053_original_mj_w_obj_omnirt",
+      "frames": 202,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub17_suitcase_005_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub17_suitcase_005_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub17_suitcase_005_original_mj_w_obj_omnirt",
+      "frames": 327,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub17_suitcase_007_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub17_suitcase_007_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub17_suitcase_007_original_mj_w_obj_omnirt",
+      "frames": 260,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub17_suitcase_008_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub17_suitcase_008_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub17_suitcase_008_original_mj_w_obj_omnirt",
+      "frames": 315,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub17_suitcase_009_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub17_suitcase_009_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub17_suitcase_009_original_mj_w_obj_omnirt",
+      "frames": 282,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub17_suitcase_010_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub17_suitcase_010_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub17_suitcase_010_original_mj_w_obj_omnirt",
+      "frames": 292,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub17_suitcase_011_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub17_suitcase_011_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub17_suitcase_011_original_mj_w_obj_omnirt",
+      "frames": 305,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub17_suitcase_014_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub17_suitcase_014_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub17_suitcase_014_original_mj_w_obj_omnirt",
+      "frames": 277,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub17_suitcase_016_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub17_suitcase_016_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub17_suitcase_016_original_mj_w_obj_omnirt",
+      "frames": 460,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub17_suitcase_017_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub17_suitcase_017_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub17_suitcase_017_original_mj_w_obj_omnirt",
+      "frames": 424,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub17_suitcase_018_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub17_suitcase_018_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub17_suitcase_018_original_mj_w_obj_omnirt",
+      "frames": 515,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub17_suitcase_020_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub17_suitcase_020_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub17_suitcase_020_original_mj_w_obj_omnirt",
+      "frames": 539,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub17_suitcase_022_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub17_suitcase_022_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub17_suitcase_022_original_mj_w_obj_omnirt",
+      "frames": 339,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_010_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_010_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_010_original_mj_w_obj_omnirt",
+      "frames": 332,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_011_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_011_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_011_original_mj_w_obj_omnirt",
+      "frames": 324,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_012_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_012_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_012_original_mj_w_obj_omnirt",
+      "frames": 344,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_013_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_013_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_013_original_mj_w_obj_omnirt",
+      "frames": 390,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_014_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_014_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_014_original_mj_w_obj_omnirt",
+      "frames": 364,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_015_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_015_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_015_original_mj_w_obj_omnirt",
+      "frames": 340,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_016_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_016_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_016_original_mj_w_obj_omnirt",
+      "frames": 370,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_017_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_017_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_017_original_mj_w_obj_omnirt",
+      "frames": 379,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_018_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_018_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_018_original_mj_w_obj_omnirt",
+      "frames": 372,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_019_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_019_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_019_original_mj_w_obj_omnirt",
+      "frames": 347,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_021_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_021_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_021_original_mj_w_obj_omnirt",
+      "frames": 317,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_022_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_022_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_022_original_mj_w_obj_omnirt",
+      "frames": 334,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_023_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_023_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_023_original_mj_w_obj_omnirt",
+      "frames": 347,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_024_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_024_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_024_original_mj_w_obj_omnirt",
+      "frames": 340,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_025_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_025_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_025_original_mj_w_obj_omnirt",
+      "frames": 335,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_026_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_026_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_026_original_mj_w_obj_omnirt",
+      "frames": 354,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_027_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_027_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_027_original_mj_w_obj_omnirt",
+      "frames": 382,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_029_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_029_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_029_original_mj_w_obj_omnirt",
+      "frames": 342,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_030_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_030_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_030_original_mj_w_obj_omnirt",
+      "frames": 409,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_031_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_031_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_031_original_mj_w_obj_omnirt",
+      "frames": 384,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_033_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_033_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_033_original_mj_w_obj_omnirt",
+      "frames": 380,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_034_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_034_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_034_original_mj_w_obj_omnirt",
+      "frames": 390,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_035_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_035_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_035_original_mj_w_obj_omnirt",
+      "frames": 395,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_036_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_036_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_036_original_mj_w_obj_omnirt",
+      "frames": 392,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_037_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_037_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_037_original_mj_w_obj_omnirt",
+      "frames": 360,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_042_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_042_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_042_original_mj_w_obj_omnirt",
+      "frames": 377,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_044_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_044_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_044_original_mj_w_obj_omnirt",
+      "frames": 335,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_070_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_070_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_070_original_mj_w_obj_omnirt",
+      "frames": 305,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_071_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_071_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_071_original_mj_w_obj_omnirt",
+      "frames": 299,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_073_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_073_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_073_original_mj_w_obj_omnirt",
+      "frames": 319,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_077_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_077_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_077_original_mj_w_obj_omnirt",
+      "frames": 322,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub1_suitcase_079_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub1_suitcase_079_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub1_suitcase_079_original_mj_w_obj_omnirt",
+      "frames": 284,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub4_suitcase_006_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub4_suitcase_006_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub4_suitcase_006_original_mj_w_obj_omnirt",
+      "frames": 314,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub4_suitcase_007_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub4_suitcase_007_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub4_suitcase_007_original_mj_w_obj_omnirt",
+      "frames": 337,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub4_suitcase_008_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub4_suitcase_008_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub4_suitcase_008_original_mj_w_obj_omnirt",
+      "frames": 352,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub4_suitcase_009_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub4_suitcase_009_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub4_suitcase_009_original_mj_w_obj_omnirt",
+      "frames": 414,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub4_suitcase_010_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub4_suitcase_010_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub4_suitcase_010_original_mj_w_obj_omnirt",
+      "frames": 452,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub4_suitcase_012_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub4_suitcase_012_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub4_suitcase_012_original_mj_w_obj_omnirt",
+      "frames": 372,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub4_suitcase_013_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub4_suitcase_013_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub4_suitcase_013_original_mj_w_obj_omnirt",
+      "frames": 427,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub4_suitcase_016_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub4_suitcase_016_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub4_suitcase_016_original_mj_w_obj_omnirt",
+      "frames": 450,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub4_suitcase_017_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub4_suitcase_017_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub4_suitcase_017_original_mj_w_obj_omnirt",
+      "frames": 504,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub4_suitcase_018_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub4_suitcase_018_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub4_suitcase_018_original_mj_w_obj_omnirt",
+      "frames": 395,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub4_suitcase_019_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub4_suitcase_019_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub4_suitcase_019_original_mj_w_obj_omnirt",
+      "frames": 385,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub4_suitcase_024_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub4_suitcase_024_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub4_suitcase_024_original_mj_w_obj_omnirt",
+      "frames": 395,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub4_suitcase_042_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub4_suitcase_042_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub4_suitcase_042_original_mj_w_obj_omnirt",
+      "frames": 394,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub4_suitcase_043_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub4_suitcase_043_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub4_suitcase_043_original_mj_w_obj_omnirt",
+      "frames": 429,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub4_suitcase_044_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub4_suitcase_044_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub4_suitcase_044_original_mj_w_obj_omnirt",
+      "frames": 425,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub4_suitcase_045_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub4_suitcase_045_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub4_suitcase_045_original_mj_w_obj_omnirt",
+      "frames": 400,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub4_suitcase_047_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub4_suitcase_047_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub4_suitcase_047_original_mj_w_obj_omnirt",
+      "frames": 470,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub5_suitcase_020_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub5_suitcase_020_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub5_suitcase_020_original_mj_w_obj_omnirt",
+      "frames": 334,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub5_suitcase_021_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub5_suitcase_021_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub5_suitcase_021_original_mj_w_obj_omnirt",
+      "frames": 415,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub5_suitcase_022_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub5_suitcase_022_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub5_suitcase_022_original_mj_w_obj_omnirt",
+      "frames": 390,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub5_suitcase_046_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub5_suitcase_046_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub5_suitcase_046_original_mj_w_obj_omnirt",
+      "frames": 429,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub5_suitcase_051_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub5_suitcase_051_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub5_suitcase_051_original_mj_w_obj_omnirt",
+      "frames": 409,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub5_suitcase_052_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub5_suitcase_052_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub5_suitcase_052_original_mj_w_obj_omnirt",
+      "frames": 407,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub8_suitcase_006_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub8_suitcase_006_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub8_suitcase_006_original_mj_w_obj_omnirt",
+      "frames": 415,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub8_suitcase_007_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub8_suitcase_007_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub8_suitcase_007_original_mj_w_obj_omnirt",
+      "frames": 412,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub8_suitcase_008_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub8_suitcase_008_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub8_suitcase_008_original_mj_w_obj_omnirt",
+      "frames": 295,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub8_suitcase_009_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub8_suitcase_009_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub8_suitcase_009_original_mj_w_obj_omnirt",
+      "frames": 325,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub8_suitcase_010_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub8_suitcase_010_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub8_suitcase_010_original_mj_w_obj_omnirt",
+      "frames": 349,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub8_suitcase_011_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub8_suitcase_011_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub8_suitcase_011_original_mj_w_obj_omnirt",
+      "frames": 350,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub8_suitcase_012_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub8_suitcase_012_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub8_suitcase_012_original_mj_w_obj_omnirt",
+      "frames": 299,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub8_suitcase_017_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub8_suitcase_017_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub8_suitcase_017_original_mj_w_obj_omnirt",
+      "frames": 362,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub8_suitcase_018_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub8_suitcase_018_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub8_suitcase_018_original_mj_w_obj_omnirt",
+      "frames": 339,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub8_suitcase_019_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub8_suitcase_019_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub8_suitcase_019_original_mj_w_obj_omnirt",
+      "frames": 385,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub8_suitcase_020_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub8_suitcase_020_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub8_suitcase_020_original_mj_w_obj_omnirt",
+      "frames": 342,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub8_suitcase_022_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub8_suitcase_022_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub8_suitcase_022_original_mj_w_obj_omnirt",
+      "frames": 279,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub8_suitcase_023_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub8_suitcase_023_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub8_suitcase_023_original_mj_w_obj_omnirt",
+      "frames": 279,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub8_suitcase_029_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub8_suitcase_029_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub8_suitcase_029_original_mj_w_obj_omnirt",
+      "frames": 264,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub8_suitcase_042_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub8_suitcase_042_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub8_suitcase_042_original_mj_w_obj_omnirt",
+      "frames": 259,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub8_suitcase_044_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub8_suitcase_044_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub8_suitcase_044_original_mj_w_obj_omnirt",
+      "frames": 339,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub8_suitcase_045_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub8_suitcase_045_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub8_suitcase_045_original_mj_w_obj_omnirt",
+      "frames": 390,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub8_suitcase_046_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub8_suitcase_046_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub8_suitcase_046_original_mj_w_obj_omnirt",
+      "frames": 249,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/suitcase/sub8_suitcase_047_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/suitcase__sub8_suitcase_047_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "suitcase",
+      "motion_name": "sub8_suitcase_047_original_mj_w_obj_omnirt",
+      "frames": 334,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub11_trashcan_000_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub11_trashcan_000_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub11_trashcan_000_original_mj_w_obj_omnirt",
+      "frames": 324,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub11_trashcan_002_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub11_trashcan_002_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub11_trashcan_002_original_mj_w_obj_omnirt",
+      "frames": 334,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub11_trashcan_004_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub11_trashcan_004_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub11_trashcan_004_original_mj_w_obj_omnirt",
+      "frames": 382,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub11_trashcan_006_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub11_trashcan_006_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub11_trashcan_006_original_mj_w_obj_omnirt",
+      "frames": 364,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub11_trashcan_007_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub11_trashcan_007_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub11_trashcan_007_original_mj_w_obj_omnirt",
+      "frames": 395,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub11_trashcan_008_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub11_trashcan_008_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub11_trashcan_008_original_mj_w_obj_omnirt",
+      "frames": 414,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub11_trashcan_009_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub11_trashcan_009_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub11_trashcan_009_original_mj_w_obj_omnirt",
+      "frames": 467,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub11_trashcan_016_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub11_trashcan_016_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub11_trashcan_016_original_mj_w_obj_omnirt",
+      "frames": 369,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub11_trashcan_018_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub11_trashcan_018_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub11_trashcan_018_original_mj_w_obj_omnirt",
+      "frames": 287,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub11_trashcan_022_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub11_trashcan_022_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub11_trashcan_022_original_mj_w_obj_omnirt",
+      "frames": 312,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub11_trashcan_023_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub11_trashcan_023_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub11_trashcan_023_original_mj_w_obj_omnirt",
+      "frames": 339,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub11_trashcan_024_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub11_trashcan_024_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub11_trashcan_024_original_mj_w_obj_omnirt",
+      "frames": 242,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub11_trashcan_038_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub11_trashcan_038_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub11_trashcan_038_original_mj_w_obj_omnirt",
+      "frames": 415,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub16_trashcan_039_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub16_trashcan_039_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub16_trashcan_039_original_mj_w_obj_omnirt",
+      "frames": 232,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub2_trashcan_003_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub2_trashcan_003_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub2_trashcan_003_original_mj_w_obj_omnirt",
+      "frames": 289,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub2_trashcan_004_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub2_trashcan_004_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub2_trashcan_004_original_mj_w_obj_omnirt",
+      "frames": 247,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub2_trashcan_005_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub2_trashcan_005_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub2_trashcan_005_original_mj_w_obj_omnirt",
+      "frames": 275,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub2_trashcan_011_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub2_trashcan_011_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub2_trashcan_011_original_mj_w_obj_omnirt",
+      "frames": 254,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub2_trashcan_012_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub2_trashcan_012_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub2_trashcan_012_original_mj_w_obj_omnirt",
+      "frames": 360,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub6_trashcan_006_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub6_trashcan_006_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub6_trashcan_006_original_mj_w_obj_omnirt",
+      "frames": 390,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub6_trashcan_007_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub6_trashcan_007_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub6_trashcan_007_original_mj_w_obj_omnirt",
+      "frames": 440,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub6_trashcan_009_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub6_trashcan_009_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub6_trashcan_009_original_mj_w_obj_omnirt",
+      "frames": 467,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub6_trashcan_010_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub6_trashcan_010_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub6_trashcan_010_original_mj_w_obj_omnirt",
+      "frames": 399,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub6_trashcan_019_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub6_trashcan_019_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub6_trashcan_019_original_mj_w_obj_omnirt",
+      "frames": 397,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub6_trashcan_020_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub6_trashcan_020_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub6_trashcan_020_original_mj_w_obj_omnirt",
+      "frames": 419,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub6_trashcan_021_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub6_trashcan_021_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub6_trashcan_021_original_mj_w_obj_omnirt",
+      "frames": 429,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub6_trashcan_022_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub6_trashcan_022_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub6_trashcan_022_original_mj_w_obj_omnirt",
+      "frames": 410,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub6_trashcan_023_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub6_trashcan_023_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub6_trashcan_023_original_mj_w_obj_omnirt",
+      "frames": 459,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub6_trashcan_027_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub6_trashcan_027_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub6_trashcan_027_original_mj_w_obj_omnirt",
+      "frames": 397,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub6_trashcan_029_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub6_trashcan_029_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub6_trashcan_029_original_mj_w_obj_omnirt",
+      "frames": 409,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub6_trashcan_042_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub6_trashcan_042_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub6_trashcan_042_original_mj_w_obj_omnirt",
+      "frames": 345,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub6_trashcan_043_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub6_trashcan_043_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub6_trashcan_043_original_mj_w_obj_omnirt",
+      "frames": 337,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub6_trashcan_044_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub6_trashcan_044_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub6_trashcan_044_original_mj_w_obj_omnirt",
+      "frames": 305,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub6_trashcan_046_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub6_trashcan_046_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub6_trashcan_046_original_mj_w_obj_omnirt",
+      "frames": 330,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub7_trashcan_000_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub7_trashcan_000_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub7_trashcan_000_original_mj_w_obj_omnirt",
+      "frames": 519,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub7_trashcan_007_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub7_trashcan_007_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub7_trashcan_007_original_mj_w_obj_omnirt",
+      "frames": 350,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub7_trashcan_008_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub7_trashcan_008_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub7_trashcan_008_original_mj_w_obj_omnirt",
+      "frames": 377,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub7_trashcan_009_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub7_trashcan_009_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub7_trashcan_009_original_mj_w_obj_omnirt",
+      "frames": 357,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub7_trashcan_020_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub7_trashcan_020_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub7_trashcan_020_original_mj_w_obj_omnirt",
+      "frames": 394,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub7_trashcan_023_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub7_trashcan_023_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub7_trashcan_023_original_mj_w_obj_omnirt",
+      "frames": 392,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub7_trashcan_042_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub7_trashcan_042_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub7_trashcan_042_original_mj_w_obj_omnirt",
+      "frames": 345,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub7_trashcan_043_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub7_trashcan_043_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub7_trashcan_043_original_mj_w_obj_omnirt",
+      "frames": 295,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub7_trashcan_046_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub7_trashcan_046_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub7_trashcan_046_original_mj_w_obj_omnirt",
+      "frames": 290,
+      "fps": 50.0
+    },
+    {
+      "source": "/home/dreams/Users/haodongchen/TextOp/TextOpTracker/artifacts/converted_from_holosoma_modified/trashcan/sub7_trashcan_047_original_mj_w_obj_omnirt/motion.npz",
+      "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/textop_converted/trashcan__sub7_trashcan_047_original_mj_w_obj_omnirt",
+      "status": "success",
+      "message": "converted",
+      "object_name": "trashcan",
+      "motion_name": "sub7_trashcan_047_original_mj_w_obj_omnirt",
+      "frames": 279,
+      "fps": 50.0
+    }
+  ]
+}

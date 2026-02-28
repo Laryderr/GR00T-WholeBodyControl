@@ -1,0 +1,20 @@
+Metadata for: sub1_plasticbox_033_original_mj_w_obj_omnirt
+==============================
+
+Body part indexes:
+[ 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29]
+
+Total timesteps: 345
+
+Data arrays summary:
+  joint_pos: (345, 29) (float64)
+  joint_vel: (345, 29) (float64)
+  body_pos_w: (345, 30, 3) (float64)
+  body_quat_w: (345, 30, 4) (float64)
+  body_lin_vel_w: (345, 30, 3) (float64)
+  body_ang_vel_w: (345, 30, 3) (float64)
+  body_part_indexes: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
+  object_pos_w: (345, 3) (float64)
+  object_quat_w: (345, 4) (float64)
+  object_lin_vel_w: (345, 3) (float64)
+  object_ang_vel_w: (345, 3) (float64)
