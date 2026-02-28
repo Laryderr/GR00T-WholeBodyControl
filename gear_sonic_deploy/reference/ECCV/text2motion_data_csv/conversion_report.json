@@ -3,6 +3,7 @@
   "output_dir": "/home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/ECCV/text2motion_data_csv",
   "glob": "**/*.pkl",
   "target_fps": 50.0,
+  "root_z_offset": 0.78,
   "input_joint_order": "mujoco",
   "quat_order": "xyzw",
   "strict": true,

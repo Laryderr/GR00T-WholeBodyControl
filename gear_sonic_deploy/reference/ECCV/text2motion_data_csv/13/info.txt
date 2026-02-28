@@ -8,6 +8,7 @@ input_frames: 100
 output_frames: 166
 input_joint_order: mujoco
 output_joint_order: isaaclab
+root_z_offset: 0.78
 quat_order_mode: xyzw
 quat_order_detected: xyzw
 quat_confidence: 1.0

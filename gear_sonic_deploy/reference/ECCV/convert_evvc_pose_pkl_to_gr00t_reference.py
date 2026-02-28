@@ -107,6 +107,12 @@ def parse_args() -> argparse.Namespace:
         help="Output target FPS (SONIC expected: 50).",
     )
     parser.add_argument(
+        "--root-z-offset",
+        type=float,
+        default=0.0,
+        help="Apply a constant offset to root position z for all output frames.",
+    )
+    parser.add_argument(
         "--input-joint-order",
         choices=["mujoco", "isaaclab"],
         default="mujoco",
@@ -340,6 +346,7 @@ def convert_one_file(
     overwrite: bool,
     dry_run: bool,
     target_fps: float,
+    root_z_offset: float,
     input_joint_order: str,
     quat_order: str,
     strict: bool,
@@ -372,6 +379,8 @@ def convert_one_file(
         times_src, times_dst = build_resample_times(root_pos.shape[0], in_fps, target_fps)
 
         root_pos_out = resample_linear(times_src, root_pos, times_dst)
+        if root_z_offset != 0.0:
+            root_pos_out[:, 2] += root_z_offset
         dof_pos_out = resample_linear(times_src, dof_pos_isaac, times_dst)
         quat_out = resample_quat_slerp_wxyz(times_src, quat_wxyz_src, times_dst)
         joint_vel_out = compute_joint_velocity(dof_pos_out, fps=target_fps)
@@ -427,6 +436,7 @@ def convert_one_file(
                         "output_frames": int(times_dst.shape[0]),
                         "input_joint_order": input_joint_order,
                         "output_joint_order": "isaaclab",
+                        "root_z_offset": root_z_offset,
                         "quat_order_mode": quat_order,
                         "quat_order_detected": detected_order,
                         "quat_confidence": confidence,
@@ -475,7 +485,10 @@ def main() -> None:
     print(f"[INFO] Input dir: {input_dir}")
     print(f"[INFO] Output dir: {output_dir}")
     print(f"[INFO] Files matched: {len(files)}")
-    print(f"[INFO] target_fps={args.target_fps}, input_joint_order={args.input_joint_order}, quat_order={args.quat_order}")
+    print(
+        f"[INFO] target_fps={args.target_fps}, root_z_offset={args.root_z_offset}, "
+        f"input_joint_order={args.input_joint_order}, quat_order={args.quat_order}"
+    )
     print(f"[INFO] strict={args.strict}, dry_run={args.dry_run}, overwrite={args.overwrite}")
 
     results: list[MotionResult] = []
@@ -486,6 +499,7 @@ def main() -> None:
             overwrite=args.overwrite,
             dry_run=args.dry_run,
             target_fps=float(args.target_fps),
+            root_z_offset=float(args.root_z_offset),
             input_joint_order=args.input_joint_order,
             quat_order=args.quat_order,
             strict=bool(args.strict),
@@ -499,6 +513,7 @@ def main() -> None:
         "output_dir": str(output_dir),
         "glob": args.glob,
         "target_fps": args.target_fps,
+        "root_z_offset": args.root_z_offset,
         "input_joint_order": args.input_joint_order,
         "quat_order": args.quat_order,
         "strict": args.strict,
