@@ -2,6 +2,7 @@ import argparse
 import csv
 import os
 import time
+from pathlib import Path
 from scipy.spatial.transform import Rotation as R
 
 import mujoco
@@ -13,6 +14,15 @@ from lxml import etree
 import zmq
 import threading
 import msgpack
+
+
+def _is_motion_dir(path: str) -> bool:
+    return (
+        os.path.isfile(os.path.join(path, "joint_pos.csv"))
+        and os.path.isfile(os.path.join(path, "body_pos.csv"))
+        and os.path.isfile(os.path.join(path, "body_quat.csv"))
+    )
+
 
 def key_call_back(keycode):
     global \
@@ -57,37 +67,56 @@ def load_anim_data(csv_path: str):
 
     ret = []
     if os.path.isdir(csv_path):
+        # Case A: csv_path itself is a motion directory
+        if _is_motion_dir(csv_path):
+            motion_dirs = [csv_path]
+        else:
+            # Case B: csv_path is a parent directory containing multiple motions
+            motion_dirs = [
+                str(p)
+                for p in sorted(Path(csv_path).iterdir())
+                if p.is_dir() and _is_motion_dir(str(p))
+            ]
+            if len(motion_dirs) == 0:
+                raise ValueError(
+                    f"No motion subdirectories found in {csv_path}. "
+                    "Each motion dir must contain joint_pos.csv/body_pos.csv/body_quat.csv."
+                )
+            print(f"[INFO] Discovered {len(motion_dirs)} motions under {csv_path}")
+            for i, md in enumerate(motion_dirs, start=1):
+                print(f"  {i:03d}. {md}")
 
-        joint_pos_path = os.path.join(csv_path, "joint_pos.csv")
-        body_pos_path = os.path.join(csv_path, "body_pos.csv")
-        body_quat_path = os.path.join(csv_path, "body_quat.csv")
+        for motion_dir in motion_dirs:
+            joint_pos_path = os.path.join(motion_dir, "joint_pos.csv")
+            body_pos_path = os.path.join(motion_dir, "body_pos.csv")
+            body_quat_path = os.path.join(motion_dir, "body_quat.csv")
 
-        isaaclab_to_mujoco = [0,  3,  6,  9,  13, 17, 1,  4,  7,  10, 14, 18, 2,  5, 8,
-                              11, 15, 19, 21, 23, 25, 27, 12, 16, 20, 22, 24, 26, 28]
+            isaaclab_to_mujoco = [0,  3,  6,  9,  13, 17, 1,  4,  7,  10, 14, 18, 2,  5, 8,
+                                11, 15, 19, 21, 23, 25, 27, 12, 16, 20, 22, 24, 26, 28]
 
-        with open(joint_pos_path, mode="r", newline="") as joint_pos_file, open(body_pos_path, mode="r", newline="") as body_pos_file, open(body_quat_path, mode="r", newline="") as body_quat_file:
-            firstRow = True
-            joint_pos_rowlist = []
-            body_pos_rowlist = []
-            body_quat_rowlist = []
-            for joint_pos_row, body_pos_row, body_quat_row in zip(joint_pos_file, body_pos_file, body_quat_file):
-                if firstRow:
-                    firstRow = False
-                    continue
-                
-                joint_pos_row = np.array([float(x) for x in joint_pos_row.split(",")])
-                body_pos_row = np.array([float(x) for x in body_pos_row.split(",")])
-                body_quat_row = np.array([float(x) for x in body_quat_row.split(",")])
+            with open(joint_pos_path, mode="r", newline="") as joint_pos_file, open(body_pos_path, mode="r", newline="") as body_pos_file, open(body_quat_path, mode="r", newline="") as body_quat_file:
+                firstRow = True
+                joint_pos_rowlist = []
+                body_pos_rowlist = []
+                body_quat_rowlist = []
+                for joint_pos_row, body_pos_row, body_quat_row in zip(joint_pos_file, body_pos_file, body_quat_file):
+                    if firstRow:
+                        firstRow = False
+                        continue
 
-                joint_pos_rowlist.append(joint_pos_row)
-                body_pos_rowlist.append(body_pos_row)
-                body_quat_rowlist.append(body_quat_row)
+                    joint_pos_row = np.array([float(x) for x in joint_pos_row.split(",")])
+                    body_pos_row = np.array([float(x) for x in body_pos_row.split(",")])
+                    body_quat_row = np.array([float(x) for x in body_quat_row.split(",")])
 
-            ret.append({
-                "dof": np.array(joint_pos_rowlist)[:, isaaclab_to_mujoco],
-                "root_rot": np.array(body_quat_rowlist)[:, [0, 1, 2, 3]],  # [x, y, z, w]
-                "root_trans_offset": np.array(body_pos_rowlist)[:, :3],
-            })
+                    joint_pos_rowlist.append(joint_pos_row)
+                    body_pos_rowlist.append(body_pos_row)
+                    body_quat_rowlist.append(body_quat_row)
+
+                ret.append({
+                    "dof": np.array(joint_pos_rowlist)[:, isaaclab_to_mujoco],
+                    "root_rot": np.array(body_quat_rowlist)[:, [0, 1, 2, 3]],  # [x, y, z, w]
+                    "root_trans_offset": np.array(body_pos_rowlist)[:, :3],
+                })
 
     else:
         csv_data = []
@@ -137,6 +166,29 @@ def receive_realtime_debug_messages(socket, data_csv_dicts, topic):
         data_csv_dicts[0]["vr_3point_position"] = np.array(result["vr_3point_position"]).reshape(3,3)
         data_csv_dicts[0]["vr_3point_orientation"] = np.array(result["vr_3point_orientation"]).reshape(3,4)
         data_csv_dicts[0]["vr_3point_compliance"] = np.array(result["vr_3point_compliance"]).reshape(3)
+
+
+def terminal_next_listener(stop_event):
+    global anim_idx, frame_idx
+    print("[TERMINAL] Enter=next motion, p=previous motion, q=quit")
+    while not stop_event.is_set():
+        try:
+            key = input().strip().lower()
+        except EOFError:
+            break
+        if stop_event.is_set():
+            break
+        if key == "q":
+            stop_event.set()
+            break
+        if key == "p":
+            anim_idx -= 1
+            frame_idx = 0
+            print(f"[TERMINAL] prev -> anim {anim_idx}")
+        else:
+            anim_idx += 1
+            frame_idx = 0
+            print(f"[TERMINAL] next -> anim {anim_idx}")
 
 def main(args) -> None:
     global \
@@ -218,6 +270,8 @@ def main(args) -> None:
     mj_model.vis.headlight.diffuse = [0.8, 0.8, 0.8]  # Increase diffuse light
     mj_model.vis.headlight.specular = [0.1, 0.1, 0.1]  # Reduce specular highlights
     
+    terminal_stop_event = threading.Event()
+
     if args.realtime_debug_url:
         context = zmq.Context()
         socket = context.socket(zmq.SUB)
@@ -262,12 +316,21 @@ def main(args) -> None:
         show_left_ui=False,
         show_right_ui=False,
     ) as viewer:
+        if args.terminal_next:
+            threading.Thread(
+                target=terminal_next_listener,
+                args=(terminal_stop_event,),
+                daemon=True,
+            ).start()
+
         # Set camera position to be further away
         viewer.cam.distance = 15.0  # Increase distance from the scene
         viewer.cam.azimuth = 90.0  # Set azimuth angle
         viewer.cam.elevation = -20.0  # Set elevation angle
         
         while viewer.is_running():
+            if terminal_stop_event.is_set():
+                break
             motion_len = data_csv_dicts[anim_idx % len(data_csv_dicts)]["dof"].shape[0]
             step_start = time.time()
             time_idx = frame_idx % motion_len
@@ -328,6 +391,7 @@ def main(args) -> None:
             time_until_next_step = mj_model.opt.timestep - (time.time() - step_start)
             if time_until_next_step > 0:
                 time.sleep(time_until_next_step)
+    terminal_stop_event.set()
 
 
 if __name__ == "__main__":
@@ -357,6 +421,11 @@ if __name__ == "__main__":
         type=str,
         default="g1_debug",
         help="Topic to receive realtime debug messages from",
+    )
+    parser.add_argument(
+        "--terminal_next",
+        action="store_true",
+        help="Enable terminal control: Enter=next motion, p=previous, q=quit.",
     )
     args = parser.parse_args()
 
