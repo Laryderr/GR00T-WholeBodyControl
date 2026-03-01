@@ -1,7 +1,7 @@
-Metadata for: test-kick-boll2
+Metadata for: kick-boll-0_xyzw
 ==============================
 
 Body part indexes:
 [0]
 
-Total timesteps: 401
+Total timesteps: 232
