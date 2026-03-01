@@ -72,6 +72,11 @@ def parse_args() -> argparse.Namespace:
         help="Continue to next motion even if one launch fails.",
     )
     parser.add_argument(
+        "--wait-key",
+        action="store_true",
+        help="After each motion, wait for terminal input: Enter=next, q=quit.",
+    )
+    parser.add_argument(
         "--dry-run",
         action="store_true",
         help="Print planned motion order without launching.",
@@ -121,6 +126,12 @@ def main() -> int:
             print(f"[ERROR] visualizer exited with code {rc} for: {motion_dir}")
             if not args.continue_on_error:
                 return rc
+
+        if args.wait_key and i < len(motions):
+            key = input("[NEXT] Press Enter for next motion, or type 'q' to quit: ").strip().lower()
+            if key == "q":
+                print("[INFO] Stopped by user.")
+                return 0
 
     print("\n[INFO] All done.")
     return 0
