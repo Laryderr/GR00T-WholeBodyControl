@@ -1,0 +1,7 @@
+Metadata for: 02
+==============================
+
+Body part indexes:
+[0]
+
+Total timesteps: 199

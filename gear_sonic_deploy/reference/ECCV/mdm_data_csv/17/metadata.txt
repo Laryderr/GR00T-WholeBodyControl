@@ -1,0 +1,7 @@
+Metadata for: 17
+==============================
+
+Body part indexes:
+[0]
+
+Total timesteps: 199

@@ -1,0 +1,16 @@
+EVVC PKL -> SONIC reference conversion info
+========================================
+
+source_file: /home/dreams/Users/haodongchen/GR00T-WholeBodyControl/gear_sonic_deploy/reference/ECCV/mdm_data_pkl/mdm/05.pkl
+input_fps: 30.0
+target_fps: 50.0
+input_frames: 120
+output_frames: 199
+input_joint_order: mujoco
+output_joint_order: isaaclab
+root_z_offset: 0.0
+quat_order_mode: xyzw
+quat_order_detected: xyzw
+quat_confidence: 1.0
+local_body_pos_shape: (120, 38, 3)
+link_body_list_len: 38
