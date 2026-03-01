@@ -5,7 +5,7 @@
   "target_fps": 50.0,
   "root_z_offset": 0.0,
   "input_joint_order": "mujoco",
-  "quat_order": "xyzw",
+  "quat_order": "wxyz",
   "strict": true,
   "dry_run": false,
   "overwrite": true,
@@ -25,8 +25,8 @@
       "output_frames": 166,
       "input_joint_order": "mujoco",
       "output_joint_order": "isaaclab",
-      "quat_order_mode": "xyzw",
-      "quat_order_detected": "xyzw",
+      "quat_order_mode": "wxyz",
+      "quat_order_detected": "wxyz",
       "quat_confidence": 1.0
     },
     {
@@ -40,8 +40,8 @@
       "output_frames": 166,
       "input_joint_order": "mujoco",
       "output_joint_order": "isaaclab",
-      "quat_order_mode": "xyzw",
-      "quat_order_detected": "xyzw",
+      "quat_order_mode": "wxyz",
+      "quat_order_detected": "wxyz",
       "quat_confidence": 1.0
     },
     {
@@ -55,8 +55,8 @@
       "output_frames": 166,
       "input_joint_order": "mujoco",
       "output_joint_order": "isaaclab",
-      "quat_order_mode": "xyzw",
-      "quat_order_detected": "xyzw",
+      "quat_order_mode": "wxyz",
+      "quat_order_detected": "wxyz",
       "quat_confidence": 1.0
     },
     {
@@ -70,8 +70,8 @@
       "output_frames": 166,
       "input_joint_order": "mujoco",
       "output_joint_order": "isaaclab",
-      "quat_order_mode": "xyzw",
-      "quat_order_detected": "xyzw",
+      "quat_order_mode": "wxyz",
+      "quat_order_detected": "wxyz",
       "quat_confidence": 1.0
     },
     {
@@ -85,8 +85,8 @@
       "output_frames": 166,
       "input_joint_order": "mujoco",
       "output_joint_order": "isaaclab",
-      "quat_order_mode": "xyzw",
-      "quat_order_detected": "xyzw",
+      "quat_order_mode": "wxyz",
+      "quat_order_detected": "wxyz",
       "quat_confidence": 1.0
     },
     {
@@ -100,8 +100,8 @@
       "output_frames": 166,
       "input_joint_order": "mujoco",
       "output_joint_order": "isaaclab",
-      "quat_order_mode": "xyzw",
-      "quat_order_detected": "xyzw",
+      "quat_order_mode": "wxyz",
+      "quat_order_detected": "wxyz",
       "quat_confidence": 1.0
     },
     {
@@ -115,8 +115,8 @@
       "output_frames": 166,
       "input_joint_order": "mujoco",
       "output_joint_order": "isaaclab",
-      "quat_order_mode": "xyzw",
-      "quat_order_detected": "xyzw",
+      "quat_order_mode": "wxyz",
+      "quat_order_detected": "wxyz",
       "quat_confidence": 1.0
     },
     {
@@ -130,8 +130,8 @@
       "output_frames": 166,
       "input_joint_order": "mujoco",
       "output_joint_order": "isaaclab",
-      "quat_order_mode": "xyzw",
-      "quat_order_detected": "xyzw",
+      "quat_order_mode": "wxyz",
+      "quat_order_detected": "wxyz",
       "quat_confidence": 1.0
     },
     {
@@ -145,8 +145,8 @@
       "output_frames": 166,
       "input_joint_order": "mujoco",
       "output_joint_order": "isaaclab",
-      "quat_order_mode": "xyzw",
-      "quat_order_detected": "xyzw",
+      "quat_order_mode": "wxyz",
+      "quat_order_detected": "wxyz",
       "quat_confidence": 1.0
     },
     {
@@ -160,8 +160,8 @@
       "output_frames": 166,
       "input_joint_order": "mujoco",
       "output_joint_order": "isaaclab",
-      "quat_order_mode": "xyzw",
-      "quat_order_detected": "xyzw",
+      "quat_order_mode": "wxyz",
+      "quat_order_detected": "wxyz",
       "quat_confidence": 1.0
     },
     {
@@ -175,8 +175,8 @@
       "output_frames": 166,
       "input_joint_order": "mujoco",
       "output_joint_order": "isaaclab",
-      "quat_order_mode": "xyzw",
-      "quat_order_detected": "xyzw",
+      "quat_order_mode": "wxyz",
+      "quat_order_detected": "wxyz",
       "quat_confidence": 1.0
     },
     {
@@ -190,8 +190,8 @@
       "output_frames": 166,
       "input_joint_order": "mujoco",
       "output_joint_order": "isaaclab",
-      "quat_order_mode": "xyzw",
-      "quat_order_detected": "xyzw",
+      "quat_order_mode": "wxyz",
+      "quat_order_detected": "wxyz",
       "quat_confidence": 1.0
     },
     {
@@ -205,8 +205,8 @@
       "output_frames": 166,
       "input_joint_order": "mujoco",
       "output_joint_order": "isaaclab",
-      "quat_order_mode": "xyzw",
-      "quat_order_detected": "xyzw",
+      "quat_order_mode": "wxyz",
+      "quat_order_detected": "wxyz",
       "quat_confidence": 1.0
     },
     {
@@ -220,8 +220,8 @@
       "output_frames": 166,
       "input_joint_order": "mujoco",
       "output_joint_order": "isaaclab",
-      "quat_order_mode": "xyzw",
-      "quat_order_detected": "xyzw",
+      "quat_order_mode": "wxyz",
+      "quat_order_detected": "wxyz",
       "quat_confidence": 1.0
     },
     {
@@ -235,8 +235,8 @@
       "output_frames": 166,
       "input_joint_order": "mujoco",
       "output_joint_order": "isaaclab",
-      "quat_order_mode": "xyzw",
-      "quat_order_detected": "xyzw",
+      "quat_order_mode": "wxyz",
+      "quat_order_detected": "wxyz",
       "quat_confidence": 1.0
     },
     {
@@ -250,8 +250,8 @@
       "output_frames": 166,
       "input_joint_order": "mujoco",
       "output_joint_order": "isaaclab",
-      "quat_order_mode": "xyzw",
-      "quat_order_detected": "xyzw",
+      "quat_order_mode": "wxyz",
+      "quat_order_detected": "wxyz",
       "quat_confidence": 1.0
     },
     {
@@ -265,8 +265,8 @@
       "output_frames": 166,
       "input_joint_order": "mujoco",
       "output_joint_order": "isaaclab",
-      "quat_order_mode": "xyzw",
-      "quat_order_detected": "xyzw",
+      "quat_order_mode": "wxyz",
+      "quat_order_detected": "wxyz",
       "quat_confidence": 1.0
     },
     {
@@ -280,8 +280,8 @@
       "output_frames": 166,
       "input_joint_order": "mujoco",
       "output_joint_order": "isaaclab",
-      "quat_order_mode": "xyzw",
-      "quat_order_detected": "xyzw",
+      "quat_order_mode": "wxyz",
+      "quat_order_detected": "wxyz",
       "quat_confidence": 1.0
     }
   ]

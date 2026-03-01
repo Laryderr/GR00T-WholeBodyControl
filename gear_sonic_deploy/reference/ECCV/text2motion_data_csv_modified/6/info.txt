@@ -9,8 +9,8 @@ output_frames: 166
 input_joint_order: mujoco
 output_joint_order: isaaclab
 root_z_offset: 0.0
-quat_order_mode: xyzw
-quat_order_detected: xyzw
+quat_order_mode: wxyz
+quat_order_detected: wxyz
 quat_confidence: 1.0
 local_body_pos_shape: (100, 38, 3)
 link_body_list_len: 38
