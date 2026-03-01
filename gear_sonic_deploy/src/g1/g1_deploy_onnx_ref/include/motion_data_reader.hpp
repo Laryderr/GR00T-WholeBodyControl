@@ -36,6 +36,7 @@
 #include <map>
 #include <sstream>
 #include <iomanip>
+#include <algorithm>
 #include <filesystem>
 #include <regex>
 
@@ -676,7 +677,7 @@ class MotionDataReader {
 
     /// Load all motion sub-directories from @p base_directory.
     /// @return True if at least one motion was loaded successfully.
-    bool ReadFromCSV(const std::string& base_directory) {
+    bool ReadFromCSV(const std::string& base_directory, bool sort_motion_names = false) {
       std::cout << "Reading motion data from CSV files in: " << base_directory << std::endl;
 
       // Auto-discover motion folders
@@ -692,6 +693,11 @@ class MotionDataReader {
       } catch (const std::exception& e) {
         std::cerr << "Error reading directory: " << e.what() << std::endl;
         return false;
+      }
+
+      if (sort_motion_names) {
+        std::sort(motion_names.begin(), motion_names.end());
+        std::cout << "Motion folders sorted lexicographically by directory name." << std::endl;
       }
 
       std::cout << "Found " << motion_names.size() << " motion folders" << std::endl;

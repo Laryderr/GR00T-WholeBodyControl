@@ -209,6 +209,7 @@ show_usage() {
     echo "  --obs-config PATH       Set the observation config file (default: policy/configs/example.yaml)"
     echo "  --planner PATH          Set the planner model path (default: planner/example.onnx)"
     echo "  --motion-data PATH      Set the motion data path (default: reference/example_motion/)"
+    echo "  --motion-order-sorted   Load motions in lexicographic folder-name order (default: off)"
     echo "  --input-type TYPE       Set the input type (default: zmq_manager)"
     echo "  --output-type TYPE      Set the output type (default: ros2)"
     echo "  --zmq-host HOST         Set the ZMQ host (default: localhost)"
@@ -301,6 +302,7 @@ BATCH_SINGLE_SESSION=false
 BATCH_SINGLE_SESSION_MAX_MOTIONS="0"
 BATCH_SINGLE_SESSION_POST_COMPLETE_SEC="0.2"
 BATCH_SINGLE_SESSION_KEY_GAP_SEC="0.15"
+MOTION_ORDER_SORTED=false
 
 # Parse arguments
 while [[ $# -gt 0 ]]; do
@@ -340,6 +342,10 @@ while [[ $# -gt 0 ]]; do
             fi
             MOTION_DATA="$2"
             shift 2
+            ;;
+        --motion-order-sorted)
+            MOTION_ORDER_SORTED=true
+            shift
             ;;
         --input-type)
             if [[ -z "$2" ]]; then
@@ -722,6 +728,7 @@ fi
 if [[ -n "$EXTRA_ARGS" ]]; then
 echo -e "  Extra Args:         ${GREEN}$EXTRA_ARGS${NC}"
 fi
+echo -e "  Motion Order Sort:  ${GREEN}$MOTION_ORDER_SORTED${NC}"
 echo ""
 echo -e "${CYAN}═══════════════════════════════════════════════════════════════════════${NC}"
 echo ""
@@ -773,6 +780,9 @@ echo -e "${BLUE}    --planner-file $PLANNER${NC} \\"
 echo -e "${BLUE}    --input-type $INPUT_TYPE${NC} \\"
 echo -e "${BLUE}    --output-type $OUTPUT_TYPE${NC} \\"
 echo -e "${BLUE}    --zmq-host $ZMQ_HOST${NC}"
+if [[ "$MOTION_ORDER_SORTED" == true ]]; then
+echo -e "${BLUE}    --motion-order-sorted${NC}"
+fi
 if [[ -n "$EXTRA_ARGS" ]]; then
 echo -e "${BLUE}    $EXTRA_ARGS${NC}"
 fi
@@ -842,6 +852,10 @@ if [[ "$confirm" =~ ^[Yy]$ ]] || [[ -z "$confirm" ]]; then
 
         "${BATCH_CMD[@]}"
     else
+        MOTION_ORDER_SORTED_ARGS=()
+        if [[ "$MOTION_ORDER_SORTED" == true ]]; then
+            MOTION_ORDER_SORTED_ARGS+=(--motion-order-sorted)
+        fi
         # Build the command with optional extra args
         if [[ -n "$EXTRA_ARGS" ]]; then
             just run g1_deploy_onnx_ref "$TARGET" "$CHECKPOINT_DECODER" "$MOTION_DATA" \
@@ -851,6 +865,7 @@ if [[ "$confirm" =~ ^[Yy]$ ]] || [[ -z "$confirm" ]]; then
                 --input-type "$INPUT_TYPE" \
                 --output-type "$OUTPUT_TYPE" \
                 --zmq-host "$ZMQ_HOST" \
+                "${MOTION_ORDER_SORTED_ARGS[@]}" \
                 $EXTRA_ARGS
         else
             just run g1_deploy_onnx_ref "$TARGET" "$CHECKPOINT_DECODER" "$MOTION_DATA" \
@@ -859,7 +874,8 @@ if [[ "$confirm" =~ ^[Yy]$ ]] || [[ -z "$confirm" ]]; then
                 --planner-file "$PLANNER" \
                 --input-type "$INPUT_TYPE" \
                 --output-type "$OUTPUT_TYPE" \
-                --zmq-host "$ZMQ_HOST"
+                --zmq-host "$ZMQ_HOST" \
+                "${MOTION_ORDER_SORTED_ARGS[@]}"
         fi
     fi
 else

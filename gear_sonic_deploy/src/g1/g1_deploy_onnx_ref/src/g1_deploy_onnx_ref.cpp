@@ -205,6 +205,7 @@ class G1Deploy {
     // =========================================================================
     // Motion data reader and current motion
     MotionDataReader motion_reader_;
+    bool motion_order_sorted_ = false;
     
     // Current motion and frame (using shared_ptr for thread safety)
     std::shared_ptr<const MotionSequence> current_motion_ = nullptr;
@@ -2009,7 +2010,8 @@ class G1Deploy {
       std::string zmq_out_topic = "g1_debug",
       bool enable_motion_recording = false,
       std::array<double, 3> initial_compliance = {0.05, 0.05, 0.0},
-      double initial_max_close_ratio = 1.0)
+      double initial_max_close_ratio = 1.0,
+      bool motion_order_sorted = false)
       : time_(0.0),
         publish_dt_(0.002),
         control_dt_(0.02),
@@ -2027,6 +2029,7 @@ class G1Deploy {
         enable_motion_recording_(enable_motion_recording),
         initial_vr_3point_compliance_(initial_compliance),
         initial_max_close_ratio_(initial_max_close_ratio),
+        motion_order_sorted_(motion_order_sorted),
         //env(ORT_LOGGING_LEVEL_WARNING, "G1Deploy"),
         model_path(model_file_path),
         planner_path(planner_file_path) {
@@ -2113,7 +2116,7 @@ class G1Deploy {
       imutorso_subscriber_.reset(new ChannelSubscriber<IMUState_>(HG_IMU_TORSO));
       imutorso_subscriber_->InitChannel(std::bind(&G1Deploy::imuTorsoHandler, this, std::placeholders::_1), 1);
       // Load motion data
-      if (motion_reader_.ReadFromCSV(motion_data_path)) {
+      if (motion_reader_.ReadFromCSV(motion_data_path, motion_order_sorted_)) {
         if (!motion_reader_.motions.empty()) {
           std::cout << "✓ Motion data loaded successfully!" << std::endl;
           // motion_reader_.PrintSummary();
@@ -3688,6 +3691,7 @@ int main(int argc, char const* argv[]) {
     std::cout << "  --logs-dir <path>: optional logs output base directory (default: logs/<timestamp>/)" << std::endl;
     std::cout << "  --enable-csv-logs: enable writing CSV logs (default: OFF)" << std::endl;
     std::cout << "  --enable-motion-recording: enable motion recording for ZMQ/planner (default: OFF)" << std::endl;
+    std::cout << "  --motion-order-sorted: load motions in lexicographic folder-name order (default: OFF)" << std::endl;
     std::cout << "  --set-compliance <value>: set initial VR 3-point compliance (0.01=rigid, 0.5=compliant; default: [0.5, 0.5, 0.0])" << std::endl;
     std::cout << "                                 Can specify 1 value (both hands) or 3 values (left_wrist,right_wrist,head)" << std::endl;
     std::cout << "                                 Keyboard controls: g/h = left hand +/- 0.1, b/v = right hand +/- 0.1" << std::endl;
@@ -3737,6 +3741,7 @@ int main(int argc, char const* argv[]) {
   std::string zmq_out_topic = "g1_debug";
   std::array<double, 3> initial_compliance = {0.5, 0.5, 0.0}; // initial compliance is 0.5 for both hands (keyboard controllable)
   double initial_max_close_ratio = 1.0; // default allows full closure, use --max-close-ratio to limit
+  bool motionOrderSorted = false;
   for (int i = 4; i < argc; i++) {
     if (std::string(argv[i]) == "--disable-crc-check") {
       disableCrcCheck = true;
@@ -3914,6 +3919,9 @@ int main(int argc, char const* argv[]) {
     } else if (std::string(argv[i]) == "--enable-motion-recording") {
       enableMotionRecording = true;
       std::cout << "[INFO] Motion recording enabled" << std::endl;
+    } else if (std::string(argv[i]) == "--motion-order-sorted") {
+      motionOrderSorted = true;
+      std::cout << "[INFO] Motion folder loading order set to lexicographic sort" << std::endl;
     } else if (std::string(argv[i]) == "--set-compliance") {
       if (i + 1 < argc) {
         // Parse compliance values (can be 1 or 3 values)
@@ -3998,7 +4006,8 @@ int main(int argc, char const* argv[]) {
     zmq_out_topic,
     enableMotionRecording,
     initial_compliance,
-    initial_max_close_ratio
+    initial_max_close_ratio,
+    motionOrderSorted
   );
   std::cout << "[DEBUG] G1Deploy object created successfully!" << std::endl;
   
