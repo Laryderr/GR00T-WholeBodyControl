@@ -44,7 +44,7 @@ def key_call_back(keycode):
         c = chr(keycode)
     except:
         c = ""
-    if c == "R":
+    if c in ("R", "r"):
         print("Reset")
         frame_idx = int(0)
         if measured_root_state is not None:
@@ -173,6 +173,7 @@ def receive_realtime_debug_messages(socket, data_csv_dicts, topic):
         data_csv_dicts[0]["vr_3point_position"] = np.array(result["vr_3point_position"]).reshape(3,3)
         data_csv_dicts[0]["vr_3point_orientation"] = np.array(result["vr_3point_orientation"]).reshape(3,4)
         data_csv_dicts[0]["vr_3point_compliance"] = np.array(result["vr_3point_compliance"]).reshape(3)
+        data_csv_dicts[0]["has_realtime_debug"] = True
 
 
 def create_measured_root_state():
@@ -394,6 +395,7 @@ def main(args) -> None:
             "vr_3point_position": np.zeros((3,3), dtype=np.float64),
             "vr_3point_orientation": np.zeros((3,4), dtype=np.float64),
             "vr_3point_compliance": np.zeros((3), dtype=np.float64),
+            "has_realtime_debug": False,
         }]
 
         threading.Thread(
@@ -510,7 +512,6 @@ def main(args) -> None:
                     with measured_root_state["lock"]:
                         has_odom = measured_root_state["has_valid_odom"]
                         odom_pos = measured_root_state["odom_pos"].copy()
-                        odom_quat_wxyz = measured_root_state["odom_quat_wxyz"].copy()
                         need_realign = measured_root_state["need_realign"]
                         alignment_offset = measured_root_state["alignment_offset"].copy()
                         reported_odom_active = measured_root_state["reported_odom_active"]
@@ -527,7 +528,7 @@ def main(args) -> None:
                             with measured_root_state["lock"]:
                                 measured_root_state["reported_odom_active"] = True
 
-                        if need_realign:
+                        if need_realign and data_dict.get("has_realtime_debug", False):
                             alignment_offset = (
                                 np.array(data_dict["root_trans_offset"][time_idx], dtype=np.float64)
                                 - odom_pos
@@ -541,7 +542,7 @@ def main(args) -> None:
                                 measured_root_state["reported_realign"] = True
 
                         display_root_trans_measured = odom_pos + alignment_offset
-                        display_root_rot_measured = odom_quat_wxyz
+                        # Keep measured orientation from g1_debug stream to match existing convention.
                     elif subscription_error and not reported_subscription_error:
                         print(
                             "[WARN] OdoState subscriber error: "
