@@ -15,6 +15,8 @@ import zmq
 import threading
 import msgpack
 
+measured_root_state = None
+
 
 def _is_motion_dir(path: str) -> bool:
     return (
@@ -35,7 +37,8 @@ def key_call_back(keycode):
         paused, \
         data_csv_dict, \
         frame_idx, \
-        anim_idx
+        anim_idx, \
+        measured_root_state
     
     try:
         c = chr(keycode)
@@ -44,6 +47,10 @@ def key_call_back(keycode):
     if c == "R":
         print("Reset")
         frame_idx = int(0)
+        if measured_root_state is not None:
+            with measured_root_state["lock"]:
+                measured_root_state["need_realign"] = True
+                measured_root_state["reported_realign"] = False
     elif c == " ":
         print("Paused")
         paused = not paused
@@ -168,6 +175,76 @@ def receive_realtime_debug_messages(socket, data_csv_dicts, topic):
         data_csv_dicts[0]["vr_3point_compliance"] = np.array(result["vr_3point_compliance"]).reshape(3)
 
 
+def create_measured_root_state():
+    return {
+        "lock": threading.Lock(),
+        "has_valid_odom": False,
+        "odom_pos": np.zeros(3, dtype=np.float64),
+        "odom_quat_wxyz": np.array([1.0, 0.0, 0.0, 0.0], dtype=np.float64),
+        "alignment_offset": np.zeros(3, dtype=np.float64),
+        "need_realign": True,
+        "reported_realign": False,
+        "reported_odom_active": False,
+        "subscription_error": "",
+    }
+
+
+def has_valid_odometry(shared_state):
+    with shared_state["lock"]:
+        return shared_state["has_valid_odom"]
+
+
+def wait_for_odometry(shared_state, timeout_sec):
+    start = time.time()
+    while time.time() - start < timeout_sec:
+        if has_valid_odometry(shared_state):
+            return True
+        time.sleep(0.02)
+    return False
+
+
+def start_odostate_subscriber(topic, shared_state):
+    try:
+        from unitree_sdk2py.core.channel import ChannelSubscriber
+        from unitree_sdk2py.idl.unitree_hg.msg.dds_ import OdoState_
+    except Exception as e:
+        return False, f"unitree_sdk2py unavailable: {e}"
+
+    def odostate_handler(msg):
+        try:
+            odom_pos = np.array(msg.position, dtype=np.float64)
+            odom_quat_xyzw = np.array(msg.orientation, dtype=np.float64)
+            if odom_pos.shape != (3,) or odom_quat_xyzw.shape != (4,):
+                return
+            quat_norm = np.linalg.norm(odom_quat_xyzw)
+            if quat_norm < 1e-8:
+                return
+            odom_quat_xyzw = odom_quat_xyzw / quat_norm
+            odom_quat_wxyz = np.array(
+                [odom_quat_xyzw[3], odom_quat_xyzw[0], odom_quat_xyzw[1], odom_quat_xyzw[2]],
+                dtype=np.float64,
+            )
+            with shared_state["lock"]:
+                shared_state["odom_pos"] = odom_pos
+                shared_state["odom_quat_wxyz"] = odom_quat_wxyz
+                shared_state["has_valid_odom"] = True
+        except Exception:
+            return
+
+    def subscribe_worker():
+        try:
+            sub = ChannelSubscriber(topic, OdoState_)
+            sub.Init(odostate_handler, 1)
+            while True:
+                time.sleep(0.2)
+        except Exception as e:
+            with shared_state["lock"]:
+                shared_state["subscription_error"] = str(e)
+
+    threading.Thread(target=subscribe_worker, daemon=True).start()
+    return True, ""
+
+
 def terminal_next_listener(stop_event):
     global anim_idx, frame_idx
     print("[TERMINAL] Enter=next motion, p=previous motion, q=quit")
@@ -201,7 +278,8 @@ def main(args) -> None:
         paused, \
         data_csv_dict, \
         frame_idx, \
-        anim_idx
+        anim_idx, \
+        measured_root_state
         
     fps = 50
     curr_start, num_motions, motion_id, motion_acc, time_step, dt, paused, frame_idx, anim_idx = 0, 1, 0, set(), 0, 1 / fps, False, int(0), 0
@@ -272,6 +350,9 @@ def main(args) -> None:
     
     terminal_stop_event = threading.Event()
 
+    measured_root_state = None
+    effective_measured_root_source = "fixed"
+
     if args.realtime_debug_url:
         context = zmq.Context()
         socket = context.socket(zmq.SUB)
@@ -290,7 +371,48 @@ def main(args) -> None:
             "vr_3point_compliance": np.zeros((3), dtype=np.float64),
         }]
 
-        threading.Thread(target=receive_realtime_debug_messages, args=(socket, data_csv_dicts, args.realtime_debug_topic)).start()
+        threading.Thread(
+            target=receive_realtime_debug_messages,
+            args=(socket, data_csv_dicts, args.realtime_debug_topic),
+            daemon=True,
+        ).start()
+
+        if args.measured_root_source != "fixed":
+            measured_root_state = create_measured_root_state()
+            ok, err = start_odostate_subscriber(args.odostate_topic, measured_root_state)
+            if not ok:
+                if args.measured_root_source == "odostate":
+                    raise RuntimeError(
+                        f"Failed to enable measured root odometry ({args.odostate_topic}): {err}"
+                    )
+                print(
+                    f"[WARN] Failed to subscribe odometry topic '{args.odostate_topic}': {err}. "
+                    "Falling back to fixed measured root."
+                )
+                measured_root_state = None
+            else:
+                effective_measured_root_source = args.measured_root_source
+                if args.measured_root_source == "odostate":
+                    if not wait_for_odometry(measured_root_state, args.odostate_timeout_sec):
+                        raise RuntimeError(
+                            "No odometry received on "
+                            f"'{args.odostate_topic}' within {args.odostate_timeout_sec:.2f}s."
+                        )
+                    print(
+                        "[INFO] OdoState connected. Measured root will follow odometry "
+                        "(with target-aligned reset/start)."
+                    )
+                elif args.measured_root_source == "auto":
+                    if wait_for_odometry(measured_root_state, args.odostate_timeout_sec):
+                        print(
+                            "[INFO] OdoState connected. Measured root will follow odometry "
+                            "(with target-aligned reset/start)."
+                        )
+                    else:
+                        print(
+                            "[WARN] No OdoState received within timeout; using fixed measured root "
+                            "until odometry becomes available."
+                        )
 
     elif args.motion_dir:
         data_csv_dicts = load_anim_data(args.motion_dir)
@@ -340,12 +462,57 @@ def main(args) -> None:
             mj_data.qpos[7:7+29] = data_dict["dof"][time_idx]
 
             if "dof_measured" in data_dict:
-                mj_data.qpos[36:36+3] = data_dict["root_trans_offset_measured"][time_idx]
-                mj_data.qpos[39:39+4] = data_dict["root_rot_measured"][time_idx]
+                display_root_trans_measured = np.array(
+                    data_dict["root_trans_offset_measured"][time_idx], dtype=np.float64
+                )
+                display_root_rot_measured = np.array(
+                    data_dict["root_rot_measured"][time_idx], dtype=np.float64
+                )
+
+                if (
+                    measured_root_state is not None
+                    and effective_measured_root_source in ("auto", "odostate")
+                ):
+                    with measured_root_state["lock"]:
+                        has_odom = measured_root_state["has_valid_odom"]
+                        odom_pos = measured_root_state["odom_pos"].copy()
+                        odom_quat_wxyz = measured_root_state["odom_quat_wxyz"].copy()
+                        need_realign = measured_root_state["need_realign"]
+                        alignment_offset = measured_root_state["alignment_offset"].copy()
+                        reported_odom_active = measured_root_state["reported_odom_active"]
+                        reported_realign = measured_root_state["reported_realign"]
+
+                    if has_odom:
+                        if not reported_odom_active:
+                            print(
+                                "[INFO] OdoState active. Measured root now follows odometry "
+                                "(with target-aligned offset)."
+                            )
+                            with measured_root_state["lock"]:
+                                measured_root_state["reported_odom_active"] = True
+
+                        if need_realign:
+                            alignment_offset = (
+                                np.array(data_dict["root_trans_offset"][time_idx], dtype=np.float64)
+                                - odom_pos
+                            )
+                            with measured_root_state["lock"]:
+                                measured_root_state["alignment_offset"] = alignment_offset
+                                measured_root_state["need_realign"] = False
+                                measured_root_state["reported_realign"] = True
+                        elif not reported_realign:
+                            with measured_root_state["lock"]:
+                                measured_root_state["reported_realign"] = True
+
+                        display_root_trans_measured = odom_pos + alignment_offset
+                        display_root_rot_measured = odom_quat_wxyz
+
+                mj_data.qpos[36:36+3] = display_root_trans_measured
+                mj_data.qpos[39:39+4] = display_root_rot_measured
                 mj_data.qpos[43:43+29] = data_dict["dof_measured"][time_idx]
 
 
-                mj_data.qpos[43+29:43+29+3] = data_dict["root_trans_offset_measured"][time_idx]
+                mj_data.qpos[43+29:43+29+3] = display_root_trans_measured
                 mj_data.qpos[43+29+3:43+29+3+4] = data_dict["root_rot"][time_idx]
                 mj_data.qpos[43+29+3+4:43+29+3+4+29] = data_dict["dof"][time_idx]
 
@@ -357,15 +524,19 @@ def main(args) -> None:
             if "vr_3point_position" in data_dict:
                 # Get root pose for transforming root-relative coordinates to world space
                 # VR 3-point data from C++ is normalized relative to root (see g1_deploy_onnx_ref.cpp)
-                root_trans = data_dict["root_trans_offset_measured"][time_idx]
-                root_quat_wxyz = data_dict["root_rot_measured"][time_idx]  # [w, x, y, z] format (MuJoCo/C++ convention)
+                if "dof_measured" in data_dict:
+                    root_trans = display_root_trans_measured
+                    root_quat_wxyz = display_root_rot_measured
+                else:
+                    root_trans = data_dict["root_trans_offset"][time_idx]
+                    root_quat_wxyz = data_dict["root_rot"][time_idx]
                 root_rot = R.from_quat(root_quat_wxyz, scalar_first=True)
                 
                 for i in range(3):
                     # VR 3-point position is in root-relative coordinates, transform to world
                     vr_pos_root_frame = data_dict["vr_3point_position"][i]
                     # vr_pos_world = root_trans + root_rot.apply(vr_pos_root_frame)
-                    vr_pos_world = vr_pos_root_frame + data_dict["root_trans_offset_measured"][time_idx]
+                    vr_pos_world = vr_pos_root_frame + root_trans
                     
                     if np.linalg.norm(data_dict["vr_3point_orientation"][i]) > 0:
                         # VR orientation is also root-relative, transform to world
@@ -421,6 +592,28 @@ if __name__ == "__main__":
         type=str,
         default="g1_debug",
         help="Topic to receive realtime debug messages from",
+    )
+    parser.add_argument(
+        "--measured-root-source",
+        type=str,
+        choices=["auto", "odostate", "fixed"],
+        default="auto",
+        help=(
+            "Measured root source in realtime mode: "
+            "auto=use odostate when available, odostate=required, fixed=legacy fixed root."
+        ),
+    )
+    parser.add_argument(
+        "--odostate-topic",
+        type=str,
+        default="rt/odostate",
+        help="DDS topic for odometry-based measured root pose.",
+    )
+    parser.add_argument(
+        "--odostate-timeout-sec",
+        type=float,
+        default=0.5,
+        help="Initial wait timeout for odostate (seconds).",
     )
     parser.add_argument(
         "--terminal_next",

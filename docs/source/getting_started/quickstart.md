@@ -81,9 +81,20 @@ Start the visualizer and connect to a running `g1_deploy` executable:
 python visualize_motion.py --realtime_debug_url tcp://localhost:5557
 ```
 
+In simulation, you can make the red measured robot use odometry root translation (and align its start/reset root position with the target robot):
+
+```sh
+python visualize_motion.py \
+  --realtime_debug_url tcp://localhost:5557 \
+  --measured-root-source auto \
+  --odostate-topic rt/odostate
+```
+
 Notes:
 - Default port: 5557 (change with `--zmq-out-port <port>`)
 - Default topic: `g1_debug` (change with `--zmq-out-topic <topic>` on executable, `--realtime_debug_topic <topic>` on visualizer)
+- `--measured-root-source`: `auto` (default), `odostate`, or `fixed`
+- `--odostate-topic`: odometry topic used for measured root pose (default: `rt/odostate`)
 - For physical robots, replace `localhost` with the robot's IP address
 
 For offline motion CSV visualization and logging details, see [Deployment Code & Program Flow](../references/deployment_code.md).

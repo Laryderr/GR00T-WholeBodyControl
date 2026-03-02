@@ -168,11 +168,23 @@ The visualizer script can connect to a running `g1_deploy` executable to visuali
 python visualize_motion.py --realtime_debug_url tcp://localhost:5557
 ```
 
+For MuJoCo simulation, to drive the red measured robot's root from odometry and re-align measured start/reset with target root:
+
+```sh
+python visualize_motion.py \
+  --realtime_debug_url tcp://localhost:5557 \
+  --measured-root-source auto \
+  --odostate-topic rt/odostate
+```
+
 This displays three G1 robots: target animation (colored), target with zero translation (green), and measured sensor data (red).
 
 **Configuration:**
 - Default port: 5557 (change with `--zmq-out-port <port>`)
 - Default topic: `g1_debug` (change with `--zmq-out-topic <topic>` on executable, `--realtime_debug_topic <topic>` on visualizer)
+- Measured root source: `--measured-root-source {auto,odostate,fixed}` (default: `auto`)
+- Odometry topic: `--odostate-topic <topic>` (default: `rt/odostate`)
+- Odo wait timeout: `--odostate-timeout-sec <sec>` (default: `0.5`)
 - For physical robots, replace `localhost` with the robot's IP address
 
 **Playback Controls:**
