@@ -174,7 +174,9 @@ For MuJoCo simulation, to drive the red measured robot's root from odometry and 
 python visualize_motion.py \
   --realtime_debug_url tcp://localhost:5557 \
   --measured-root-source auto \
-  --odostate-topic rt/odostate
+  --odostate-topic rt/odostate \
+  --dds-domain-id 0 \
+  --dds-interface lo
 ```
 
 This displays three G1 robots: target animation (colored), target with zero translation (green), and measured sensor data (red).
@@ -185,6 +187,8 @@ This displays three G1 robots: target animation (colored), target with zero tran
 - Measured root source: `--measured-root-source {auto,odostate,fixed}` (default: `auto`)
 - Odometry topic: `--odostate-topic <topic>` (default: `rt/odostate`)
 - Odo wait timeout: `--odostate-timeout-sec <sec>` (default: `0.5`)
+- DDS domain id for odometry: `--dds-domain-id <id>` (default: `0`)
+- DDS interface for odometry: `--dds-interface <iface>` (default: `lo`)
 - For physical robots, replace `localhost` with the robot's IP address
 
 **Playback Controls:**

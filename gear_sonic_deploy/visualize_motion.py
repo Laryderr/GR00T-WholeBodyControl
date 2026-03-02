@@ -186,6 +186,7 @@ def create_measured_root_state():
         "reported_realign": False,
         "reported_odom_active": False,
         "subscription_error": "",
+        "reported_subscription_error": False,
     }
 
 
@@ -203,12 +204,36 @@ def wait_for_odometry(shared_state, timeout_sec):
     return False
 
 
-def start_odostate_subscriber(topic, shared_state):
+def init_dds_for_odometry(domain_id, interface):
+    try:
+        from unitree_sdk2py.core.channel import ChannelFactoryInitialize
+    except Exception as e:
+        return False, f"unitree_sdk2py unavailable: {e}"
+
+    try:
+        if interface:
+            ChannelFactoryInitialize(domain_id, interface)
+        else:
+            ChannelFactoryInitialize(domain_id)
+        return True, ""
+    except Exception as e:
+        msg = str(e)
+        # Other modules may have already initialized the singleton.
+        if "initialized" in msg.lower():
+            return True, ""
+        return False, msg
+
+
+def start_odostate_subscriber(topic, shared_state, dds_domain_id, dds_interface):
     try:
         from unitree_sdk2py.core.channel import ChannelSubscriber
         from unitree_sdk2py.idl.unitree_hg.msg.dds_ import OdoState_
     except Exception as e:
         return False, f"unitree_sdk2py unavailable: {e}"
+
+    ok, err = init_dds_for_odometry(dds_domain_id, dds_interface)
+    if not ok:
+        return False, f"DDS init failed (domain={dds_domain_id}, interface='{dds_interface}'): {err}"
 
     def odostate_handler(msg):
         try:
@@ -379,7 +404,12 @@ def main(args) -> None:
 
         if args.measured_root_source != "fixed":
             measured_root_state = create_measured_root_state()
-            ok, err = start_odostate_subscriber(args.odostate_topic, measured_root_state)
+            ok, err = start_odostate_subscriber(
+                args.odostate_topic,
+                measured_root_state,
+                args.dds_domain_id,
+                args.dds_interface,
+            )
             if not ok:
                 if args.measured_root_source == "odostate":
                     raise RuntimeError(
@@ -391,6 +421,10 @@ def main(args) -> None:
                 )
                 measured_root_state = None
             else:
+                print(
+                    "[INFO] OdoState DDS config: "
+                    f"domain={args.dds_domain_id}, interface='{args.dds_interface}'"
+                )
                 effective_measured_root_source = args.measured_root_source
                 if args.measured_root_source == "odostate":
                     if not wait_for_odometry(measured_root_state, args.odostate_timeout_sec):
@@ -481,6 +515,8 @@ def main(args) -> None:
                         alignment_offset = measured_root_state["alignment_offset"].copy()
                         reported_odom_active = measured_root_state["reported_odom_active"]
                         reported_realign = measured_root_state["reported_realign"]
+                        subscription_error = measured_root_state["subscription_error"]
+                        reported_subscription_error = measured_root_state["reported_subscription_error"]
 
                     if has_odom:
                         if not reported_odom_active:
@@ -506,6 +542,13 @@ def main(args) -> None:
 
                         display_root_trans_measured = odom_pos + alignment_offset
                         display_root_rot_measured = odom_quat_wxyz
+                    elif subscription_error and not reported_subscription_error:
+                        print(
+                            "[WARN] OdoState subscriber error: "
+                            f"{subscription_error}. Falling back to fixed measured root."
+                        )
+                        with measured_root_state["lock"]:
+                            measured_root_state["reported_subscription_error"] = True
 
                 mj_data.qpos[36:36+3] = display_root_trans_measured
                 mj_data.qpos[39:39+4] = display_root_rot_measured
@@ -614,6 +657,18 @@ if __name__ == "__main__":
         type=float,
         default=0.5,
         help="Initial wait timeout for odostate (seconds).",
+    )
+    parser.add_argument(
+        "--dds-domain-id",
+        type=int,
+        default=0,
+        help="DDS domain id for odostate subscription (sim default: 0).",
+    )
+    parser.add_argument(
+        "--dds-interface",
+        type=str,
+        default="lo",
+        help="DDS network interface for odostate subscription (sim default: lo).",
     )
     parser.add_argument(
         "--terminal_next",

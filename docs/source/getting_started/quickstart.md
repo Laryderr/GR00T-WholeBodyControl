@@ -87,7 +87,9 @@ In simulation, you can make the red measured robot use odometry root translation
 python visualize_motion.py \
   --realtime_debug_url tcp://localhost:5557 \
   --measured-root-source auto \
-  --odostate-topic rt/odostate
+  --odostate-topic rt/odostate \
+  --dds-domain-id 0 \
+  --dds-interface lo
 ```
 
 Notes:
@@ -95,6 +97,8 @@ Notes:
 - Default topic: `g1_debug` (change with `--zmq-out-topic <topic>` on executable, `--realtime_debug_topic <topic>` on visualizer)
 - `--measured-root-source`: `auto` (default), `odostate`, or `fixed`
 - `--odostate-topic`: odometry topic used for measured root pose (default: `rt/odostate`)
+- `--dds-domain-id`: DDS domain id for odometry subscription (default: `0`)
+- `--dds-interface`: DDS interface for odometry subscription (default: `lo`, i.e. loopback in sim)
 - For physical robots, replace `localhost` with the robot's IP address
 
 For offline motion CSV visualization and logging details, see [Deployment Code & Program Flow](../references/deployment_code.md).
