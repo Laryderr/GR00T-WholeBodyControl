@@ -1,0 +1,7 @@
+Metadata for: kick-poll-0-9camera-trajectorypos_transform_xyzw
+==============================
+
+Body part indexes:
+[0]
+
+Total timesteps: 232

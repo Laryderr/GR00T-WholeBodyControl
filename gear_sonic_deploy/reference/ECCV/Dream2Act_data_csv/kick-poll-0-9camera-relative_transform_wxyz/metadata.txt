@@ -1,0 +1,7 @@
+Metadata for: kick-poll-0-9camera-relative_transform_wxyz
+==============================
+
+Body part indexes:
+[0]
+
+Total timesteps: 232
